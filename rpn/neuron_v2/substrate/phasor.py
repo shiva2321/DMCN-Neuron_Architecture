@@ -32,7 +32,7 @@ def unbind(ab: np.ndarray, a: np.ndarray) -> np.ndarray:
 def bundle(*vectors: np.ndarray, normalise_output: bool = True) -> np.ndarray:
     if not vectors:
         raise ValueError("bundle() requires at least one vector")
-    s = vectors[0].astype(np.complex64).copy()
+    s = vectors[0].astype(np.complex64)
     for v in vectors[1:]:
         s += v.astype(np.complex64)
     return normalise(s) if normalise_output else s.astype(np.complex64)
@@ -43,6 +43,8 @@ def sim(x: np.ndarray, y: np.ndarray) -> float:
 
 
 def sim_batch(matrix: np.ndarray, query: np.ndarray) -> np.ndarray:
+    matrix = np.ascontiguousarray(matrix, dtype=np.complex64)
+    query = np.ascontiguousarray(query, dtype=np.complex64)
     D = matrix.shape[1]
     mat_real = matrix.view(np.float32).reshape(len(matrix), -1)
     qry_real = query.view(np.float32)

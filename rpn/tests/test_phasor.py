@@ -44,3 +44,12 @@ def test_sim_batch_matches_sim():
     batch = sim_batch(M, q)
     for i in range(8):
         assert abs(batch[i] - sim(M[i], q)) < 1e-4
+
+
+def test_normalise_unit_magnitude_and_zero_safe():
+    v = (np.random.RandomState(9).randn(D) + 1j * np.random.RandomState(8).randn(D)).astype(np.complex64)
+    n = normalise(v)
+    assert np.allclose(np.abs(n), 1.0, atol=1e-5)
+    z = np.zeros(D, dtype=np.complex64)
+    nz = normalise(z)
+    assert np.all(np.isfinite(nz.view(np.float32))) and not np.any(np.abs(nz) > 0)
