@@ -1,5 +1,5 @@
 """Smoke tests for CompositionalColumn (3-RPN role-bound compositional lookup)."""
-from neuron_v2.core.column import CompositionalColumn
+from neuron_v2.core.column import ColorShardedColumn, CompositionalColumn
 from neuron_v2.core.item_table import ItemTable
 
 D = 256

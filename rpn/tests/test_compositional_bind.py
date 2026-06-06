@@ -6,7 +6,7 @@ def test_compositional_bind_smoke_2x2():
     cfg = BindConfig(D=256, n_colors=2, n_shapes=2)
     results = run_benchmark(cfg)
     by = {r.name: r for r in results}
-    assert by["compositional_column"].accuracy == 1.0
+    assert by["color_sharded_column"].accuracy == 1.0
     assert by["single_rpn"].accuracy == 1.0
 
 

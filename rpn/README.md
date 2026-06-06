@@ -3,6 +3,8 @@
 A gradient-free, phasor-based cognitive unit. See `../docs/specs/2026-06-06-neuron-v2-rpn-design.md`
 for the full concept; this package is **Stage 1 (RPN core, k=1)**.
 
+**Direction:** Path **B** (column / new architecture). Path **A** (RXCA delta retrofit) is **pinned** — see [`docs/BOARD.md`](../docs/BOARD.md). **B-1 done:** `python -m benchmarks.compositional_bind`. Next: **B-2** column capacity at scale.
+
 ## What this MVP proves
 
 - Phasor VSA substrate with exact bind/unbind (G1–G5 tests).
@@ -17,6 +19,7 @@ for the full concept; this package is **Stage 1 (RPN core, k=1)**.
 pip install -e ".[dev]"
 python -m pytest -v
 python -m benchmarks.capacity_curve
+python -m benchmarks.continual_assoc   # RPN vs RXCA-style vs online MLP (pass/fail)
 ```
 
 ## Not yet (later stages)

@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from neuron_v2.core.column import CompositionalColumn
+from neuron_v2.core.column import ColorShardedColumn
 from neuron_v2.core.item_table import ItemTable
 from benchmarks.baselines import HolographicCompositeBrain, SingleRPNComposite
 
@@ -75,8 +75,8 @@ def run_benchmark(cfg: BindConfig) -> list[BindResult]:
         ("single_rpn", lambda: SingleRPNComposite(cfg.D, _items(), mode="delta")),
         ("rxca_hologram", lambda: HolographicCompositeBrain(cfg.D, _items())),
         (
-            "compositional_column",
-            lambda: CompositionalColumn(cfg.D, _items(), mode="delta"),
+            "color_sharded_column",
+            lambda: ColorShardedColumn(cfg.D, _items(), mode="delta"),
         ),
     ]
 
@@ -97,7 +97,7 @@ class Verdict:
 
 def evaluate_verdict(results: list[BindResult], cfg: BindConfig) -> Verdict:
     by = {r.name: r for r in results}
-    col = by["compositional_column"]
+    col = by["color_sharded_column"]
     single = by["single_rpn"]
     rxca = by["rxca_hologram"]
     baseline_best = max(single.accuracy, rxca.accuracy)
@@ -111,7 +111,7 @@ def evaluate_verdict(results: list[BindResult], cfg: BindConfig) -> Verdict:
 
     checks: list[tuple[str, bool]] = [
         (
-            f"compositional_column acc >= {cfg.column_min_acc:.2f} "
+            f"color_sharded_column acc >= {cfg.column_min_acc:.2f} "
             f"({col.accuracy:.3f})",
             col.accuracy >= cfg.column_min_acc,
         ),
@@ -155,13 +155,13 @@ def evaluate_verdict(results: list[BindResult], cfg: BindConfig) -> Verdict:
     lines.append("")
     lines.append("Interpretation:")
     lines.append(
-        "  - single_rpn matches column integrator (same composite HV + delta mem)."
+        "  - single_rpn: all pairs in one delta matrix (interference at scale)."
     )
     lines.append(
-        "  - At 8x8, delta capacity caps integrator recall; RXCA hologram can edge ahead."
+        "  - color_sharded_column: one RPN per color, |shapes| pairs each."
     )
     lines.append(
-        "  - Column specialists help only when integrator Born-fails (see 4-pair smoke)."
+        "  - CompositionalColumn (3-RPN integrator) = disambiguation demo; see unit tests."
     )
     return Verdict(passed=passed, lines=lines, baseline_threshold=threshold)
 

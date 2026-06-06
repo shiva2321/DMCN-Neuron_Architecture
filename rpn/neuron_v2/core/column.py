@@ -17,6 +17,33 @@ def _role_seed(name: str) -> int:
     return int(digest[:8], 16) % (2**31 - 1)
 
 
+def _read_rpn_ctx(
+    rpn: RPN,
+    D: int,
+    items: ItemTable,
+    ctx: np.ndarray,
+    gate_threshold: float = 0.05,
+    confidence_threshold: float = 0.1,
+    min_resonance: float = 0.1,
+) -> tuple[Optional[str], float]:
+    pred = rpn.mem.predict(ctx)
+    confidence = float(np.linalg.norm(pred)) / np.sqrt(D)
+    if confidence < confidence_threshold:
+        return None, 0.0
+
+    echo = normalise(pred)
+    tokens, mat = items.matrix()
+    res = sim_batch(mat, echo)
+    out = rectified_born(
+        res,
+        gate_threshold=gate_threshold,
+        min_resonance=min_resonance,
+    )
+    if not out.gate_passed:
+        return None, out.best_prob
+    return tokens[out.best_idx], out.best_prob
+
+
 class CompositionalColumn:
     """3-RPN column: integrator + role-bound color/shape specialists."""
 
@@ -44,42 +71,30 @@ class CompositionalColumn:
         self.color_rpn.mem.write(self._color_ctx(color), target)
         self.shape_rpn.mem.write(self._shape_ctx(shape), target)
 
-    def _read_ctx(
-        self,
-        rpn: RPN,
-        ctx: np.ndarray,
-        gate_threshold: float = 0.05,
-        confidence_threshold: float = 0.1,
-        min_resonance: float = 0.1,
-    ) -> tuple[Optional[str], float]:
-        pred = rpn.mem.predict(ctx)
-        confidence = float(np.linalg.norm(pred)) / np.sqrt(self.D)
-        if confidence < confidence_threshold:
-            return None, 0.0
-
-        echo = normalise(pred)
-        tokens, mat = self.items.matrix()
-        res = sim_batch(mat, echo)
-        out = rectified_born(
-            res,
-            gate_threshold=gate_threshold,
-            min_resonance=min_resonance,
-        )
-        if not out.gate_passed:
-            return None, out.best_prob
-        return tokens[out.best_idx], out.best_prob
-
     def read(
         self,
         color: str,
         shape: str,
         **gate_kwargs,
     ) -> tuple[Optional[str], float]:
-        integrator_out = self._read_ctx(
-            self.integrator, self._composite_ctx(color, shape), **gate_kwargs
+        """Read object for (color, shape).
+
+        Integrator-first when it Born-passes (composite ctx is unique); else max-prob
+        among passing specialists. See stage2b plan for why strict global vote fails.
+        """
+        integrator_out = _read_rpn_ctx(
+            self.integrator,
+            self.D,
+            self.items,
+            self._composite_ctx(color, shape),
+            **gate_kwargs,
         )
-        color_out = self._read_ctx(self.color_rpn, self._color_ctx(color), **gate_kwargs)
-        shape_out = self._read_ctx(self.shape_rpn, self._shape_ctx(shape), **gate_kwargs)
+        color_out = _read_rpn_ctx(
+            self.color_rpn, self.D, self.items, self._color_ctx(color), **gate_kwargs
+        )
+        shape_out = _read_rpn_ctx(
+            self.shape_rpn, self.D, self.items, self._shape_ctx(shape), **gate_kwargs
+        )
 
         passed = [out for out in (integrator_out, color_out, shape_out) if out[0] is not None]
         if not passed:
@@ -90,3 +105,46 @@ class CompositionalColumn:
         if integrator_out[0] is not None:
             return integrator_out
         return max(passed, key=lambda pair: pair[1])
+
+
+class ColorShardedColumn:
+    """One RPN per color — shape->object inside each shard (Path B capacity win).
+
+    Single monolithic memory must store all color×shape pairs and suffers
+    interference; each shard holds only |shapes| associations.
+    """
+
+    def __init__(self, D: int, items: ItemTable, mode: str = "delta"):
+        self.D = D
+        self.items = items
+        self.mode = mode
+        self.role_shape = random_hv(D, seed=_role_seed("role_shape"))
+        self._shards: dict[str, RPN] = {}
+
+    def _shape_ctx(self, shape: str) -> np.ndarray:
+        return bind(permute(self.role_shape, 2), self.items[shape])
+
+    def _shard(self, color: str) -> RPN:
+        if color not in self._shards:
+            self._shards[color] = RPN(self.D, self.items, mode=self.mode)
+        return self._shards[color]
+
+    def learn(self, color: str, shape: str, object_token: str) -> None:
+        target = self.items[object_token]
+        self._shard(color).mem.write(self._shape_ctx(shape), target)
+
+    def read(
+        self,
+        color: str,
+        shape: str,
+        **gate_kwargs,
+    ) -> tuple[Optional[str], float]:
+        if color not in self._shards:
+            return None, 0.0
+        return _read_rpn_ctx(
+            self._shards[color],
+            self.D,
+            self.items,
+            self._shape_ctx(shape),
+            **gate_kwargs,
+        )
