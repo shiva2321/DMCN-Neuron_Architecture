@@ -192,6 +192,11 @@ FPE for true temporal order.
 - **Local prediction-error / delta only** (Decision #4 path) → **gradient-free invariant
   preserved** (no torch/autograd, no global backprop). The delta rule is one step of online
   regression on prediction error.
+- **Stage 1 implementation detail:** T1 episodic fast-weights are stored as a **(D×D) matrix**
+  (`W += lr·outer(value − W@k̂, conj(k̂))`), not a single holographic vector surface — on unit
+  phasors, rebound-unbind subtracts the *entire* surface and breaks residual learning.
+- **Stage 1 anti-hallucination:** Born gating uses rectified similarities *and* a raw-predict
+  confidence floor (`‖W@k̂‖/√D`) before normalising the echo for candidate scoring.
 - Surprise gating + adaptive decay + consolidation = continual, self-supervised learning (no labels).
 - Forward-Forward (contrastive positive/negative oscillatory phase) is noted as a research
   side-quest, not core.

@@ -10,6 +10,8 @@
 
 **Scope note:** This plan implements **Stage 1** of `docs/specs/2026-06-06-neuron-v2-rpn-design.md` only, and folds in Stage 0's *proof* (delta beats additive on saturation) as a test — **without modifying the RXCA repo**. Deferred to later stages: multi-band dendrites `K>1`, settling `k>1`, the predictive loop (③), T0/T2 memory tiers, Kuramoto mode (④), and columns (⑤).
 
+**Implementation root & isolation (IMPORTANT):** All paths below are under the implementation root **`E:\Neuron_v2\rpn\`** (read `E:\Neuron_v2\neuron_v2\...` as `E:\Neuron_v2\rpn\neuron_v2\...`). Run all commands (pytest, pip, benchmarks, git) from `E:\Neuron_v2\rpn`. **Git is already initialized** at the repo root `E:\Neuron_v2` on branch `feature/stage1-rpn-core` — **do NOT run `git init`** (Task 1, Step 1's `git init` is superseded). A separate JavaScript project — the "NAD-Neuron v2" astro-dendritic spiking simulator (`experiment/`, `server.js`, `package.json`, `test_pong.js`) — lives at the repo root and is **OFF-LIMITS**: never read-modify it, and **only ever `git add` explicit `rpn/`-relative paths** (never `git add -A` / `git add .`).
+
 ---
 
 ## File Structure
@@ -349,6 +351,8 @@ git add neuron_v2/core/delta_memory.py tests/test_delta_memory.py
 git commit -m "feat: DeltaMemory with delta-rule writes; proves de-saturation vs additive"
 ```
 
+**Implementation note (post-build):** The single-vector holographic surface in Step 3 above is **algebraically degenerate** for the delta rule on unit phasors (`bind(ctx, unbind(surface, ctx)) ≈ surface`, so subtracting the rebound erases the whole memory). The shipped implementation uses a **(D×D) matrix fast-weight state** `W` with `W += lr * outer(value − W@k̂, conj(k̂))` — canonical for delta/fast-weight learning.
+
 ---
 
 ## Task 3: Born gate + ItemTable + the RPN unit
@@ -527,6 +531,11 @@ Expected: PASS (4 passed)
 git add neuron_v2/core/born_gate.py neuron_v2/core/item_table.py neuron_v2/core/rpn.py tests/test_born_gate.py tests/test_rpn.py
 git commit -m "feat: Born gate + ItemTable + RPN core (k=1) with store/recall + refusal"
 ```
+
+**Implementation notes (post-build):**
+- `ItemTable` uses **MD5-based token seeds** (not `hash()`, which is salted per interpreter).
+- `RPN.read()` gates on **raw predict magnitude** (`‖W@k̂‖/√D`) before Born scoring; `recall()` normalisation alone cannot carry confidence.
+- `rectified_born(..., min_resonance=...)` blocks the “single tiny positive flake → P=1.0” failure mode.
 
 ---
 
