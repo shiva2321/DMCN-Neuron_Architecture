@@ -1,6 +1,6 @@
 import numpy as np
 from neuron_v2.substrate.phasor import (
-    random_hv, normalise, bind, unbind, bundle, sim, sim_batch,
+    random_hv, normalise, bind, unbind, bundle, sim, sim_batch, permute,
 )
 
 D = 4096
@@ -44,6 +44,28 @@ def test_sim_batch_matches_sim():
     batch = sim_batch(M, q)
     for i in range(8):
         assert abs(batch[i] - sim(M[i], q)) < 1e-4
+
+
+def test_permute_unpermute_recovers_vector():
+    v = random_hv(D, seed=10)
+    for k in (1, 7, 42, D - 3):
+        assert sim(permute(permute(v, k), -k), v) > 0.9999
+
+
+def test_permute_role_binding_unbind_recovers_filler():
+    a = random_hv(D, seed=11)
+    b = random_hv(D, seed=12)
+    k = 17
+    role = permute(a, k)
+    rec = unbind(bind(role, b), role)
+    assert sim(rec, b) > 0.999
+
+
+def test_permute_distributes_over_bind():
+    a = random_hv(D, seed=13)
+    b = random_hv(D, seed=14)
+    k = 23
+    assert sim(permute(bind(a, b), k), bind(permute(a, k), permute(b, k))) > 0.9999
 
 
 def test_normalise_unit_magnitude_and_zero_safe():

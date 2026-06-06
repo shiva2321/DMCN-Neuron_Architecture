@@ -29,6 +29,16 @@ def unbind(ab: np.ndarray, a: np.ndarray) -> np.ndarray:
     return (ab * np.conj(a)).astype(np.complex64)
 
 
+def permute(v: np.ndarray, k: int) -> np.ndarray:
+    """Cyclic shift by *k* positions on axis 0 (VSA permutation ρ^k).
+
+    Standard role-binding operator: ``bind(permute(role, k), filler)`` encodes
+    filler at slot *k*.  Inverse is ``permute(v, -k)``; permute distributes over
+    bind: ``permute(bind(a, b), k) == bind(permute(a, k), permute(b, k))``.
+    """
+    return np.roll(v, k, axis=0).astype(np.complex64)
+
+
 def bundle(*vectors: np.ndarray, normalise_output: bool = True) -> np.ndarray:
     if not vectors:
         raise ValueError("bundle() requires at least one vector")
