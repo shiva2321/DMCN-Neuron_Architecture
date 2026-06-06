@@ -1,0 +1,13 @@
+[project]
+name = "neuron_v2"
+version = "0.1.0"
+description = "Resonant Predictive Neuron (RPN) - gradient-free phasor cognitive unit"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
