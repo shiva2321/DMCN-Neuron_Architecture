@@ -169,15 +169,46 @@ class RXCAAdditiveBrain:
         )
 
 
+def _vote_read_tokens(
+    neurons: list[RPN],
+    ctx_token: str,
+    gate_threshold: float = 0.05,
+    confidence_threshold: float = 0.1,
+    min_resonance: float = 0.1,
+) -> tuple[Optional[str], float]:
+    """Best Born prob among gate-passing reads across all column neurons."""
+    best_token: Optional[str] = None
+    best_prob = 0.0
+    for neuron in neurons:
+        token, prob = neuron.read(
+            ctx_token,
+            gate_threshold=gate_threshold,
+            confidence_threshold=confidence_threshold,
+            min_resonance=min_resonance,
+        )
+        if token is not None and prob > best_prob:
+            best_token, best_prob = token, prob
+    return best_token, best_prob
+
+
 class RPNColumn:
     """Shard associations across N delta RPNs by context hash (specialist column)."""
 
-    def __init__(self, D: int, items: ItemTable, n_neurons: int, mode: str = "delta"):
+    def __init__(
+        self,
+        D: int,
+        items: ItemTable,
+        n_neurons: int,
+        mode: str = "delta",
+        *,
+        vote_on_read: bool = False,
+    ):
         if n_neurons < 1:
             raise ValueError("n_neurons must be >= 1")
         self.D = D
         self.items = items
         self.n_neurons = n_neurons
+        self.vote_on_read = vote_on_read
         self.neurons = [RPN(D, items, mode=mode) for _ in range(n_neurons)]
 
     def _idx(self, ctx_token: str) -> int:
@@ -193,6 +224,14 @@ class RPNColumn:
         confidence_threshold: float = 0.1,
         min_resonance: float = 0.1,
     ) -> tuple[Optional[str], float]:
+        if self.vote_on_read:
+            return _vote_read_tokens(
+                self.neurons,
+                ctx_token,
+                gate_threshold=gate_threshold,
+                confidence_threshold=confidence_threshold,
+                min_resonance=min_resonance,
+            )
         return self.neurons[self._idx(ctx_token)].read(
             ctx_token,
             gate_threshold=gate_threshold,

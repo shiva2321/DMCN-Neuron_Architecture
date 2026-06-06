@@ -32,13 +32,13 @@
 |----|------|--------|----------------|
 | **B-0** | Stage 1 RPN core (`k=1`) | **DONE** | 16 tests pass; delta > additive on capacity curve; continual shootout PASS vs RXCA hologram + online MLP |
 | **B-1** | **Mini RPC: column + binding** | **DONE** | `color_sharded_column` **100%** vs single_rpn **42%** / RXCA **53%** on 8×8 grid (`python -m benchmarks.compositional_bind` PASS). `CompositionalColumn` (3-RPN) = 4-pair disambiguation unit test. |
-| **B-2** | Column capacity at scale | Backlog | `M` associations per shard: **8-neuron column** beats **1 neuron** at `M ≥ 256` (same total `D`) |
-| **B-3** | Column vote (not just hash route) | Backlog | Read queries all neurons; best Born prob wins; measure vs routed shard |
-| **B-4** | T0/T2 + consolidation (spec Stage 2) | Backlog | Continual BWT benchmark |
-| **B-5** | Predictive loop `k>1` (spec Stage 3) | Backlog | Settling + surprise-gated write |
+| **B-2** | Column capacity at scale | **DONE** | 8-shard `ColorShardedColumn` **100%** vs single **23%** at **M=256** (8×32 grid, D=512). `python -m benchmarks.column_capacity` PASS |
+| **B-3** | Column vote (not just hash route) | **DONE** | Token hash vote **100%** = route; color vote **12.5%** vs route **100%**; composite hash vote **37%** vs route **95%**. `python -m benchmarks.column_vote` PASS |
+| **B-4** | T0/T2 + consolidation (spec Stage 2) | **DONE** | `tiered_t0t2_consolidate` BWT **0.0** vs episodic-reset **-1.0**; task-0 retention **100%**. `python -m benchmarks.continual_bwt` PASS |
+| **B-5** | Predictive loop `k>1` (spec Stage 3) | **DONE** | `predictive_k4` noisy margin **≥0.20** vs `rpn_k1`; surprise gate **≥75%** write skip on stream. `python -m benchmarks.predictive_loop` PASS |
 | **B-6** | Full RPC + reference frames (spec Stage 5) | Backlog | Compositional generalization scorecard |
 
-**Current focus:** **B-1** — smallest proof that Path B is not just “expensive Path A.”
+**Current focus:** **B-6** — full RPC + reference frames (compositional generalization scorecard).
 
 ---
 
@@ -73,6 +73,11 @@ cd rpn
 python -m pytest -q
 python -m benchmarks.continual_assoc
 python -m benchmarks.capacity_curve
+python -m benchmarks.compositional_bind
+python -m benchmarks.column_capacity
+python -m benchmarks.column_vote
+python -m benchmarks.continual_bwt
+python -m benchmarks.predictive_loop
 ```
 
 ---

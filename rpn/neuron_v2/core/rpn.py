@@ -29,8 +29,10 @@ class RPN:
         gate_threshold: float = 0.05,
         confidence_threshold: float = 0.1,
         min_resonance: float = 0.1,
+        *,
+        ctx_hv: np.ndarray | None = None,
     ) -> tuple[Optional[str], float]:
-        ctx = self.items[ctx_token]
+        ctx = ctx_hv if ctx_hv is not None else self.items[ctx_token]
         pred = self.mem.predict(ctx)
         # Unit phasor HVs have L2 norm sqrt(D); a confident recall is O(sqrt(D)).
         confidence = float(np.linalg.norm(pred)) / np.sqrt(self.D)
