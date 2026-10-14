@@ -1,0 +1,122 @@
+{
+  "0.0005": {
+    "frequency_rad_s": 0.0005,
+    "regime": "Sub-Band",
+    "hpr_mse": 3.8114914328835935e-06,
+    "rcpn_mse": 0.015240501943474441,
+    "memoryless_mse": 8.996868493065129e-05,
+    "hpr_to_memoryless_ratio": 0.042359937087558024
+  },
+  "0.001": {
+    "frequency_rad_s": 0.001,
+    "regime": "Sub-Band",
+    "hpr_mse": 1.5443972604587374e-05,
+    "rcpn_mse": 0.0015892561603305687,
+    "memoryless_mse": 0.0002566669261346957,
+    "hpr_to_memoryless_ratio": 0.06016891676691999
+  },
+  "0.003": {
+    "frequency_rad_s": 0.003,
+    "regime": "Sub-Band",
+    "hpr_mse": 0.00016328284932477604,
+    "rcpn_mse": 5.033139606298588e-06,
+    "memoryless_mse": 0.0005969535871913767,
+    "hpr_to_memoryless_ratio": 0.2735222931988149
+  },
+  "0.005": {
+    "frequency_rad_s": 0.005,
+    "regime": "In-Band",
+    "hpr_mse": 0.000442173338490456,
+    "rcpn_mse": 0.0001391761589301789,
+    "memoryless_mse": 0.008297315470679944,
+    "hpr_to_memoryless_ratio": 0.05329106831507974
+  },
+  "0.01": {
+    "frequency_rad_s": 0.01,
+    "regime": "In-Band",
+    "hpr_mse": 0.0022197624466679584,
+    "rcpn_mse": 1.5501933145411303e-06,
+    "memoryless_mse": 0.02084775673798009,
+    "hpr_to_memoryless_ratio": 0.10647483131246066
+  },
+  "0.02": {
+    "frequency_rad_s": 0.02,
+    "regime": "In-Band",
+    "hpr_mse": 0.002989207149206731,
+    "rcpn_mse": 2.7819660030525398e-08,
+    "memoryless_mse": 0.07562425340340966,
+    "hpr_to_memoryless_ratio": 0.039527091103831596
+  },
+  "0.05": {
+    "frequency_rad_s": 0.05,
+    "regime": "In-Band",
+    "hpr_mse": 0.005051614969932341,
+    "rcpn_mse": 5.057372580366009e-18,
+    "memoryless_mse": 0.468417291906156,
+    "hpr_to_memoryless_ratio": 0.010784432917775517
+  },
+  "0.1": {
+    "frequency_rad_s": 0.1,
+    "regime": "In-Band",
+    "hpr_mse": 0.003917289527951085,
+    "rcpn_mse": 4.980536279394044e-19,
+    "memoryless_mse": 1.4449927395710263,
+    "hpr_to_memoryless_ratio": 0.0027109406113726225
+  },
+  "0.15": {
+    "frequency_rad_s": 0.15,
+    "regime": "In-Band",
+    "hpr_mse": 0.0036733739424410486,
+    "rcpn_mse": 7.351446040531975e-12,
+    "memoryless_mse": 1.9530746659022475,
+    "hpr_to_memoryless_ratio": 0.0018808159195162811
+  },
+  "0.2": {
+    "frequency_rad_s": 0.2,
+    "regime": "In-Band",
+    "hpr_mse": 0.0024287528669033314,
+    "rcpn_mse": 0.000166550228561825,
+    "memoryless_mse": 1.6556522560844569,
+    "hpr_to_memoryless_ratio": 0.0014669462402556442
+  },
+  "0.3": {
+    "frequency_rad_s": 0.3,
+    "regime": "Out-Of-Band",
+    "hpr_mse": 0.009524165415145508,
+    "rcpn_mse": 0.07605599906134818,
+    "memoryless_mse": 0.04019550560275535,
+    "hpr_to_memoryless_ratio": 0.23694596952732302
+  },
+  "0.5": {
+    "frequency_rad_s": 0.5,
+    "regime": "Out-Of-Band",
+    "hpr_mse": 0.015823955777572028,
+    "rcpn_mse": 0.05037590395388184,
+    "memoryless_mse": 1.8373820583447946,
+    "hpr_to_memoryless_ratio": 0.008612229350767006
+  },
+  "0.8": {
+    "frequency_rad_s": 0.8,
+    "regime": "Out-Of-Band",
+    "hpr_mse": 0.07948026833155977,
+    "rcpn_mse": 0.2378519405552294,
+    "memoryless_mse": 1.9625975669529794,
+    "hpr_to_memoryless_ratio": 0.04049748622178391
+  },
+  "1.2": {
+    "frequency_rad_s": 1.2,
+    "regime": "Out-Of-Band",
+    "hpr_mse": 0.19448321369479782,
+    "rcpn_mse": 0.4660459794281184,
+    "memoryless_mse": 0.5755611038014327,
+    "hpr_to_memoryless_ratio": 0.3379019343580847
+  },
+  "2.0": {
+    "frequency_rad_s": 2.0,
+    "regime": "Out-Of-Band",
+    "hpr_mse": 0.41382706532509045,
+    "rcpn_mse": 0.49253733481335954,
+    "memoryless_mse": 1.6671367851763101,
+    "hpr_to_memoryless_ratio": 0.24822622026126276
+  }
+}

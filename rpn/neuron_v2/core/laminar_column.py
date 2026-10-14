@@ -98,10 +98,10 @@ class LaminarCorticalColumn:
         obj_hv = self.items[object_token]
         ctx_hv = self.items[top_down_context] if top_down_context else None
 
-        # 1. Layer 4: Compose factorized reference frame
+        # 1. Layer 4: Compose factorized reference frame & key
         where_bound = bind(permute(self.frame.role_where, 1), where_hv)
         what_bound = bind(permute(self.frame.role_what, 2), what_hv)
-        composite_input = bundle(where_bound, what_bound)
+        composite_key = bind(where_bound, what_bound)
 
         # 2. Layer 5: Route to specialized infragranular predictive unit & memory
         shard_idx = self._get_shard(where_token)
@@ -113,12 +113,12 @@ class LaminarCorticalColumn:
         out = unit.step(inputs, top_down_context=ctx_hv)
 
         # Predict target object via fast-weight memory
-        pred = mem.predict(what_bound)
+        pred = mem.predict(composite_key)
         residual = obj_hv - pred
         surprise = float(np.linalg.norm(residual)) / np.sqrt(self.D)
 
         # 3. Layer 2/3: Compute prediction error & write fast-weights
-        mem.write(what_bound, obj_hv)
+        mem.write(composite_key, obj_hv)
         unit.learn_autonomous_xor(inputs, target_spike=True, spiked=out["spiked"])
 
         # 4. Layer 6: Update corticothalamic precision
@@ -137,13 +137,15 @@ class LaminarCorticalColumn:
         what_hv = self.items[what_token]
         ctx_hv = self.items[top_down_context] if top_down_context else None
 
-        # Layer 4: Factorize
+        # Layer 4: Factorize & compose key
+        where_bound = bind(permute(self.frame.role_where, 1), where_hv)
         what_bound = bind(permute(self.frame.role_what, 2), what_hv)
+        composite_key = bind(where_bound, what_bound)
 
         # Layer 5: Retrieve from corresponding where-shard fast-weight memory
         shard_idx = self._get_shard(where_token)
         mem = self.l5_mems[shard_idx]
-        pred_raw = mem.predict(what_bound)
+        pred_raw = mem.predict(composite_key)
 
         # Layer 2/3: Lateral consensus voting via phase coherence
         if lateral_hypotheses:

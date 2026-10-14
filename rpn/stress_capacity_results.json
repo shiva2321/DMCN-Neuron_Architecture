@@ -1,0 +1,74 @@
+{
+  "8": {
+    "locations": 8,
+    "total_associations": 128,
+    "items_per_shard": 16,
+    "rcc_accuracy": 1.0,
+    "monolith_accuracy": 0.28125,
+    "regime": "Sub-Rank (<D)"
+  },
+  "16": {
+    "locations": 16,
+    "total_associations": 256,
+    "items_per_shard": 32,
+    "rcc_accuracy": 1.0,
+    "monolith_accuracy": 0.1796875,
+    "regime": "Sub-Rank (<D)"
+  },
+  "32": {
+    "locations": 32,
+    "total_associations": 512,
+    "items_per_shard": 64,
+    "rcc_accuracy": 1.0,
+    "monolith_accuracy": 0.106,
+    "regime": "Sub-Rank (<D)"
+  },
+  "64": {
+    "locations": 64,
+    "total_associations": 1024,
+    "items_per_shard": 128,
+    "rcc_accuracy": 1.0,
+    "monolith_accuracy": 0.046,
+    "regime": "Sub-Rank (<D)"
+  },
+  "128": {
+    "locations": 128,
+    "total_associations": 2048,
+    "items_per_shard": 256,
+    "rcc_accuracy": 1.0,
+    "monolith_accuracy": 0.02,
+    "regime": "Sub-Rank (<D)"
+  },
+  "192": {
+    "locations": 192,
+    "total_associations": 3072,
+    "items_per_shard": 384,
+    "rcc_accuracy": 0.988,
+    "monolith_accuracy": 0.01,
+    "regime": "Near-Rank (~1.5D)"
+  },
+  "256": {
+    "locations": 256,
+    "total_associations": 4096,
+    "items_per_shard": 512,
+    "rcc_accuracy": 0.846,
+    "monolith_accuracy": 0.006,
+    "regime": "Over-Rank (~2D)"
+  },
+  "384": {
+    "locations": 384,
+    "total_associations": 6144,
+    "items_per_shard": 768,
+    "rcc_accuracy": 0.532,
+    "monolith_accuracy": 0.002,
+    "regime": "Saturated (>3D)"
+  },
+  "512": {
+    "locations": 512,
+    "total_associations": 8192,
+    "items_per_shard": 1024,
+    "rcc_accuracy": 0.446,
+    "monolith_accuracy": 0.0,
+    "regime": "Saturated (>3D)"
+  }
+}
