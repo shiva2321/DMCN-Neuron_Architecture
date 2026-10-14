@@ -1,0 +1,56 @@
+{
+  "hierarchical_cleanup": {
+    "tree_accuracy": 1.0,
+    "brute_accuracy": 1.0,
+    "tree_latency_us": 280.58400000190886,
+    "brute_latency_us": 937.460000000101,
+    "speedup_factor": 3.3411028426201184,
+    "vocabulary_size": 10000
+  },
+  "multi_modular_grid": {
+    "multi_modular_acc": 1.0,
+    "monolith_acc": 0.0478515625,
+    "total_associations": 1024,
+    "locations": 64,
+    "physical_vectors": 36,
+    "coordinate_capacity": 5005
+  },
+  "log_cochlear_resonator": {
+    "0.001": {
+      "frequency": 0.001,
+      "log_cochlear_mse": 2.971931166646626e-06,
+      "linear_resonator_mse": 5.550856880576319e-06,
+      "improvement_factor": 1.8677609168316034
+    },
+    "0.01": {
+      "frequency": 0.01,
+      "log_cochlear_mse": 6.989593307581829e-05,
+      "linear_resonator_mse": 0.0007830162909994218,
+      "improvement_factor": 11.202601589853014
+    },
+    "0.1": {
+      "frequency": 0.1,
+      "log_cochlear_mse": 0.0023961644350322543,
+      "linear_resonator_mse": 8.538086809146086e-05,
+      "improvement_factor": 0.03563230755084284
+    },
+    "0.5": {
+      "frequency": 0.5,
+      "log_cochlear_mse": 0.0001031286191751019,
+      "linear_resonator_mse": 0.0017883152127579987,
+      "improvement_factor": 17.340629856796795
+    },
+    "1.0": {
+      "frequency": 1.0,
+      "log_cochlear_mse": 6.424218246685105e-06,
+      "linear_resonator_mse": 0.05232032639863315,
+      "improvement_factor": 8144.232401449067
+    },
+    "2.0": {
+      "frequency": 2.0,
+      "log_cochlear_mse": 1.76135549060993e-05,
+      "linear_resonator_mse": 0.0023082655628141923,
+      "improvement_factor": 131.05052189180026
+    }
+  }
+}

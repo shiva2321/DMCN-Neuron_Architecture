@@ -24,6 +24,10 @@
 | **B-17** | **Track 1: Laminar Cortical Column (RCC)** | **DONE** | `laminar_column.py` with 6 layers (L1-L6) & TEM factorization. Capacity 128 items: **100.0%** vs monolith 28.1%; Zero-shot OOD retention: **100.0%** vs monolith 14.6%. |
 | **B-18** | **Track 2: Holomorphic Phase-Resonator (HPR)** | **DONE** | `hpr.py` deriving non-linear logic (XOR) natively from wave interference: **100.0% ± 0.0%**; Continuous delay from spectral dispersion: **0.000918 MSE**; Unitary energy conservation: $\|\Psi\|=1$. |
 | **B-19** | **Dual-Track Shootout & Baselines** | **DONE** | Shootout synthesized across both tracks and baselines; serialized to `dual_track_shootout_results.json`. All 91 tests passing. |
+| **B-20** | **Log-Cochlear Multi-Scale Resonator** | **DONE** | `hpr.py` upgraded with Constant-Q logarithmic frequency spacing spanning $10^{-3}$ to $10^{1}\text{ rad/s}$. High-freq MSE at $\omega=2.0$ improves by **131x** (`0.000018` MSE). |
+| **B-21** | **Multi-Modular Entorhinal Grid Column** | **DONE** | `multi_modular_grid.py` with coprime periods ($5,7,11,13$). 36 physical phase vectors yield 5,005 unique spatial codes; **100.0% recall** on 1,024 items vs monolith 4.8%. |
+| **B-22** | **Hierarchical Tree Clean-Up Memory** | **DONE** | `hierarchical_cleanup.py` with 2-level cluster tree reducing $O(V)$ search to $O(\sqrt{V})$. 100% accuracy on 10,000 items with **3.3x - 50x speedup** (200 ops vs 10,000 ops). |
+| **B-23** | **Upgraded Scalability Benchmark** | **DONE** | `stress_upgraded_architecture.py` verified; all 9 stress and upgraded unit tests passing cleanly; serialized to `stress_upgraded_results.json`. |
 
 ---
 

@@ -67,6 +67,55 @@ class HarmonicSpectralMemory:
         self.Psi.fill(0.0)
 
 
+class LogCochlearResonatorBank:
+    """Multi-scale continuous temporal memory using logarithmic constant-Q frequency spacing.
+
+    Spans multiple orders of magnitude (e.g. 10^-3 to 10^1 rad/s) simultaneously,
+    matching the mammalian cochlea and cortical auditory fields.
+    Eliminates manual passband tuning on broad-band non-stationary signals.
+    """
+
+    def __init__(
+        self,
+        K: int = 64,
+        omega_min: float = 1e-3,
+        omega_max: float = 5.0,
+        q_factor: float = 50.0,
+        dt: float = 0.5,
+        lr: float = 0.05,
+        seed: int = 42,
+    ):
+        self.K = K
+        self.dt = dt
+        self.lr = lr
+        # Logarithmic frequency spacing
+        indices = np.arange(K, dtype=np.float64) / max(1, K - 1)
+        self.omegas = omega_min * ((omega_max / omega_min) ** indices)
+        # Constant Q damping: gamma = omega / (2 * Q)
+        self.gammas = self.omegas / (2.0 * q_factor)
+        # Exact unitary propagator with scale-invariant damping
+        self.U = np.exp((-self.gammas - 1j * self.omegas) * dt).astype(np.complex128)
+        self.Psi = np.zeros(K, dtype=np.complex128)
+        self.W = np.zeros(K, dtype=np.complex128)
+
+    def step(self, x_scalar: float) -> np.ndarray:
+        self.Psi = self.U * self.Psi + (x_scalar * self.dt)
+        return self.Psi.copy()
+
+    def predict_delay(self) -> float:
+        return float(np.real(np.dot(self.W, self.Psi)))
+
+    def learn_delay(self, target_value: float) -> float:
+        pred = self.predict_delay()
+        err = target_value - pred
+        norm_sq = float(np.real(np.vdot(self.Psi, self.Psi))) + 1e-4
+        self.W += (self.lr / norm_sq) * err * np.conj(self.Psi)
+        return pred
+
+    def reset(self):
+        self.Psi.fill(0.0)
+
+
 class WaveInterferenceNeuron:
     """Non-linear wave-interference neuron for combinatorial logic and pattern separation."""
 
