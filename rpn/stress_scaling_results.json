@@ -1,20 +1,20 @@
 {
   "throughput": {
     "HPR_Harmonic_Resonator": {
-      "latency_us": 2.223100000037448,
-      "throughput_ops_per_sec": 449822.3201759503
+      "latency_us": 1.3748800000030315,
+      "throughput_ops_per_sec": 727336.203885281
     },
     "HPR_Wave_Gate": {
-      "latency_us": 3.5530500000277243,
-      "throughput_ops_per_sec": 281448.33312005096
+      "latency_us": 2.1393100000750565,
+      "throughput_ops_per_sec": 467440.4363859916
     },
     "RCPN_Continuous_Delay": {
-      "latency_us": 53.148689999989074,
-      "throughput_ops_per_sec": 18815.13918781828
+      "latency_us": 26.907539999956498,
+      "throughput_ops_per_sec": 37164.304131913086
     },
     "RCC_Laminar_Column_Read": {
-      "latency_us": 322.082600000158,
-      "throughput_ops_per_sec": 3104.793615052504
+      "latency_us": 100.13400000025285,
+      "throughput_ops_per_sec": 9986.61793194594
     }
   },
   "memory_scaling": {
@@ -127,33 +127,33 @@
   "vocabulary_cleanup_scaling": {
     "100": {
       "V": 100,
-      "latency_us": 5.094499999813706,
-      "queries_per_sec": 196290.11679979734
+      "latency_us": 4.374999998617568,
+      "queries_per_sec": 228571.42864365358
     },
     "500": {
       "V": 500,
-      "latency_us": 17.006999999011896,
-      "queries_per_sec": 58799.31793132827
+      "latency_us": 12.880499998573214,
+      "queries_per_sec": 77636.73771288157
     },
     "1000": {
       "V": 1000,
-      "latency_us": 114.19599999953789,
-      "queries_per_sec": 8756.874146240207
+      "latency_us": 66.57850000010512,
+      "queries_per_sec": 15019.863769811893
     },
     "5000": {
       "V": 5000,
-      "latency_us": 139.3434999999954,
-      "queries_per_sec": 7176.509847965875
+      "latency_us": 77.5324999995064,
+      "queries_per_sec": 12897.817044547337
     },
     "10000": {
       "V": 10000,
-      "latency_us": 310.3740000005928,
-      "queries_per_sec": 3221.919361796059
+      "latency_us": 122.06999999762047,
+      "queries_per_sec": 8192.020971733376
     },
     "50000": {
       "V": 50000,
-      "latency_us": 4072.4719999980152,
-      "queries_per_sec": 245.55110507831296
+      "latency_us": 2311.2159999982396,
+      "queries_per_sec": 432.67267100987607
     }
   }
 }

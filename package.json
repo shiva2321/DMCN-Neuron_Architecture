@@ -1,0 +1,12 @@
+{
+  "name": "astro-dendritic-neuron-simulator",
+  "version": "1.0.0",
+  "description": "Next-Generation Astro-Dendritic Spiking Neuron Simulator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "Antigravity Pair",
+  "license": "MIT"
+}

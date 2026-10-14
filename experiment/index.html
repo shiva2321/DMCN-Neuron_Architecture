@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro-Dendritic Spiking Neuron Simulator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <div class="logo-section">
+                <div class="logo-icon">N</div>
+                <div class="logo-text">
+                    <h1>Astro-Dendritic Spiking Neuron</h1>
+                    <span>Model: NAD-Neuron v2.0 // Active-Dendritic-Glia</span>
+                </div>
+            </div>
+            <div class="status-badge-container">
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span id="simulation-status">Simulation Active</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar Config Panel -->
+        <aside class="sidebar">
+            <!-- Simulation Playback Controls -->
+            <section class="sidebar-section">
+                <h2 class="section-title">Controls</h2>
+                <div class="control-group">
+                    <button id="btn-play-pause" class="btn btn-primary play-btn-glow">Pause Simulation</button>
+                    <div class="btn-group-row">
+                        <button id="btn-step" class="btn">Step Frame</button>
+                        <button id="btn-reset" class="btn">Reset Engine</button>
+                    </div>
+                    <!-- Simulation Speed Slider -->
+                    <div class="slider-container" style="margin-top: 8px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 12px;">
+                        <div class="slider-header">
+                            <span>Simulation Speed</span>
+                            <span class="slider-val" id="val-speed">60 Hz</span>
+                        </div>
+                        <input type="range" id="param-speed" min="1" max="60" step="1" value="60">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Model Paradigm Switches -->
+            <section class="sidebar-section">
+                <h2 class="section-title">Paradigm Toggles</h2>
+                <div class="control-group">
+                    <div class="toggle-row">
+                        <div class="toggle-label">
+                            <span>Active Dendrites</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-dendrites" checked>
+                            <span class="slider-toggle"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-row">
+                        <div class="toggle-label">
+                            <span>Astrocytic Regulation</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-astrocyte" checked>
+                            <span class="slider-toggle"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-row">
+                        <div class="toggle-label">
+                            <span>LMU Delay Tracking</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-lmu" checked>
+                            <span class="slider-toggle"></span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parameter Configuration -->
+            <section class="sidebar-section">
+                <h2 class="section-title">Parameters</h2>
+                <div class="control-group">
+                    <!-- Soma Settings -->
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <span>Soma Threshold (Vth)</span>
+                            <span class="slider-val" id="val-vth">15.0</span>
+                        </div>
+                        <input type="range" id="param-vth" min="5" max="30" step="0.5" value="15.0">
+                    </div>
+
+                    <!-- Dendrite Settings -->
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <span>Dendritic Threshold</span>
+                            <span class="slider-val" id="val-dth">8.0</span>
+                        </div>
+                        <input type="range" id="param-dth" min="3" max="20" step="0.5" value="8.0">
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <span>Plateau Duration</span>
+                            <span class="slider-val" id="val-tplateau">80ms</span>
+                        </div>
+                        <input type="range" id="param-tplateau" min="20" max="250" step="10" value="80">
+                    </div>
+
+                    <!-- Astrocyte Settings -->
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <span>Astrocyte Gain (k)</span>
+                            <span class="slider-val" id="val-astrogain">0.40</span>
+                        </div>
+                        <input type="range" id="param-astrogain" min="0" max="1" step="0.05" value="0.40">
+                    </div>
+
+                    <!-- Learning Rate -->
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <span>STDP Learning Rate</span>
+                            <span class="slider-val" id="val-stdplr">0.05</span>
+                        </div>
+                        <input type="range" id="param-stdplr" min="0.001" max="0.2" step="0.005" value="0.05">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Tasks Selection -->
+            <section class="sidebar-section">
+                <h2 class="section-title">Experiments</h2>
+                <div class="control-group" id="task-selector">
+                    <div class="task-card active" data-task="xor">
+                        <h3>1. Non-linear XOR Problem</h3>
+                        <p>Learn and solve non-linearly separable inputs using active dendritic branches in a single neuron.</p>
+                    </div>
+                    <div class="task-card" data-task="sequence">
+                        <h3>2. Spatiotemporal Sequence</h3>
+                        <p>Detect sequence A &rarr; B &rarr; C while ignoring noise or reversed pattern C &rarr; B &rarr; A.</p>
+                    </div>
+                    <div class="task-card" data-task="noise">
+                        <h3>3. Homeostatic Noise Filter</h3>
+                        <p>Evaluate astrocyte's dynamic gain stabilization under high-frequency background noise.</p>
+                    </div>
+                    <div class="task-card" data-task="pong">
+                        <h3>4. Neuro-Pong Game</h3>
+                        <p>Play Pong with a single neuron! Trained live using Dopamine-Modulated reinforcement learning (R-STDP).</p>
+                    </div>
+                    <div class="task-card" data-task="conditioning">
+                        <h3>5. Pavlovian Conditioning</h3>
+                        <p>Associate a neutral conditioned tone (CS) with unconditioned food (US) using STDP synapses.</p>
+                    </div>
+                    <div class="task-card" data-task="frequency">
+                        <h3>6. Frequency Discrimination</h3>
+                        <p>Distinguish High-Freq (50Hz) from Low-Freq (10Hz) inputs using dendritic time constants and LMU delay states.</p>
+                    </div>
+                    <div class="task-card" data-task="navigation">
+                        <h3>7. 1D Grid Navigation</h3>
+                        <p>Steer a grid agent towards targets by mapping somatic spikes to actions trained by dopamine rewards.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Telemetry Stats -->
+            <section class="sidebar-section">
+                <h2 class="section-title">Stats & Telemetry</h2>
+                <div class="stats-list">
+                    <div class="stats-row">
+                        <span>Total Soma Spikes:</span>
+                        <span id="stat-spikes">0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span>Active Epoch:</span>
+                        <span id="stat-epoch">0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span>Task Accuracy / Fit:</span>
+                        <span id="stat-accuracy">0.0%</span>
+                    </div>
+                    <div class="stats-row">
+                        <span>Astrocytic Ca²⁺ level:</span>
+                        <span id="stat-calcium">0.00</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <!-- Morphology Canvas Visualizer -->
+            <div class="canvas-panel">
+                <canvas id="neuron-canvas"></canvas>
+                
+                <!-- Floating Info Pill Overlay -->
+                <div class="canvas-metrics">
+                    <div class="metric-pill">
+                        <span>Soma Voltage</span>
+                        <span id="metric-voltage">0.00 mV</span>
+                    </div>
+                    <div class="metric-pill">
+                        <span>Gliotransmitter Gain</span>
+                        <span id="metric-gain">1.00x</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oscilloscope Graphs Dashboard -->
+            <div class="dashboard-panel">
+                <div class="telemetry-card">
+                    <div class="telemetry-header">
+                        <span>Somatic Membrane Potential (Vm)</span>
+                        <span style="color: var(--accent-voltage);">Oscilloscope</span>
+                    </div>
+                    <canvas id="soma-telemetry" class="telemetry-canvas"></canvas>
+                </div>
+                <div class="telemetry-card">
+                    <div class="telemetry-header">
+                        <span>Dendritic Plateau Potentials (VD)</span>
+                        <span style="color: var(--accent-dendrite);">Branches A & B</span>
+                    </div>
+                    <canvas id="dendrite-telemetry" class="telemetry-canvas"></canvas>
+                </div>
+                <div class="telemetry-card">
+                    <div class="telemetry-header">
+                        <span>Astrocytic Ca²⁺ & Synaptic Gains</span>
+                        <span style="color: var(--accent-astro);">Glia Loop</span>
+                    </div>
+                    <canvas id="astro-telemetry" class="telemetry-canvas"></canvas>
+                </div>
+                <div class="telemetry-card">
+                    <div class="telemetry-header">
+                        <span>Learning Curve & Performance</span>
+                        <span style="color: var(--accent-synapse);">Accuracy History</span>
+                    </div>
+                    <canvas id="progress-telemetry" class="telemetry-canvas"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Core Simulator Scripts -->
+    <script src="neuron.js?v=2"></script>
+    <script src="tasks.js?v=2"></script>
+    <script src="visualizer.js?v=2"></script>
+    <script src="ui.js?v=2"></script>
+</body>
+</html>

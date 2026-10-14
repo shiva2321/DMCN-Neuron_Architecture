@@ -1,15 +1,23 @@
 {
   "hierarchical_cleanup": {
-    "tree_accuracy": 1.0,
+    "tree_accuracy_clean": 1.0,
+    "tree_accuracy_overlap": 1.0,
     "brute_accuracy": 1.0,
-    "tree_latency_us": 280.58400000190886,
-    "brute_latency_us": 937.460000000101,
-    "speedup_factor": 3.3411028426201184,
+    "tree_latency_us": 132.84000000112428,
+    "brute_latency_us": 251.2969999997949,
+    "speedup_factor": 1.8917268894735628,
     "vocabulary_size": 10000
   },
   "multi_modular_grid": {
     "multi_modular_acc": 1.0,
     "monolith_acc": 0.0478515625,
+    "noise_sweep": {
+      "0.0": 1.0,
+      "0.5": 1.0,
+      "1.0": 1.0,
+      "1.5": 1.0,
+      "2.0": 0.98828125
+    },
     "total_associations": 1024,
     "locations": 64,
     "physical_vectors": 36,
@@ -51,6 +59,22 @@
       "log_cochlear_mse": 1.76135549060993e-05,
       "linear_resonator_mse": 0.0023082655628141923,
       "improvement_factor": 131.05052189180026
+    },
+    "frozen_broadband": {
+      "train_omegas": [
+        0.01,
+        0.05,
+        0.2,
+        0.8
+      ],
+      "test_omegas": [
+        0.023,
+        0.087,
+        0.31,
+        1.2
+      ],
+      "frozen_mse": 0.08736780789393214,
+      "chance_mse": 0.11909929512805115
     }
   }
 }

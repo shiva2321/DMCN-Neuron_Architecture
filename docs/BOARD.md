@@ -28,6 +28,7 @@
 | **B-21** | **Multi-Modular Entorhinal Grid Column** | **DONE** | `multi_modular_grid.py` with coprime periods ($5,7,11,13$). 36 physical phase vectors yield 5,005 unique spatial codes; **100.0% recall** on 1,024 items vs monolith 4.8%. |
 | **B-22** | **Hierarchical Tree Clean-Up Memory** | **DONE** | `hierarchical_cleanup.py` with 2-level cluster tree reducing $O(V)$ search to $O(\sqrt{V})$. 100% accuracy on 10,000 items with **3.3x - 50x speedup** (200 ops vs 10,000 ops). |
 | **B-23** | **Upgraded Scalability Benchmark** | **DONE** | `stress_upgraded_architecture.py` verified; all 9 stress and upgraded unit tests passing cleanly; serialized to `stress_upgraded_results.json`. |
+| **B-24** | **Zero-Cheat Methodological Audit & OOD Hardening** | **DONE** | Full methodological audit exposed single-tone online tracking vs frozen broadband generalization ($0.087$ MSE vs $0.000018$). Overlapping clusters and noise sweep benchmarked. All 101 tests pass. |
 
 ---
 
