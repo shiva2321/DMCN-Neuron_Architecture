@@ -1,0 +1,14 @@
+{
+  "RCPN_ContinuousState": {
+    "mean_mse": 0.030339379113926496,
+    "std_mse": 0.0012486771439872502
+  },
+  "TappedDelayLine": {
+    "mean_mse": 0.02116737312654495,
+    "std_mse": 0.0009506091870348401
+  },
+  "MemorylessBaseline": {
+    "mean_mse": 0.6157304371712711,
+    "std_mse": 0.007405978996954418
+  }
+}

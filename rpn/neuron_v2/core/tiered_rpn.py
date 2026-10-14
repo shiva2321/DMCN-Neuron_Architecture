@@ -35,6 +35,9 @@ class TieredRPN:
     def learn(self, ctx_token: str, target_token: str) -> float:
         ctx = self.items[ctx_token]
         target = self.items[target_token]
+        return self.learn_hv(ctx, target)
+
+    def learn_hv(self, ctx: np.ndarray, target: np.ndarray) -> float:
         self.mem.set_working(ctx, target)
         return self.mem.write_episodic(ctx, target)
 
@@ -54,11 +57,12 @@ class TieredRPN:
         confidence_threshold: float = 0.1,
         min_resonance: float = 0.1,
         *,
+        ctx_hv: np.ndarray | None = None,
         use_t0: bool = True,
         use_t1: bool = True,
         use_t2: bool = True,
     ) -> tuple[Optional[str], float]:
-        ctx = self.items[ctx_token]
+        ctx = ctx_hv if ctx_hv is not None else self.items[ctx_token]
         pred = self.mem.predict(
             ctx,
             use_t0=use_t0,

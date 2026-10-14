@@ -1,0 +1,14 @@
+{
+  "Capacity_128": {
+    "rcc_accuracy": 1.0,
+    "single_monolith_accuracy": 0.28125,
+    "margin": 0.71875
+  },
+  "OOD_Adaptation": {
+    "rcc_prior_retention": 1.0,
+    "single_prior_retention": 0.14583333333333334,
+    "rcc_new_location_accuracy": 1.0,
+    "single_new_location_accuracy": 0.75,
+    "retention_margin": 0.8541666666666666
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "xor_benchmark": {
+    "mean_accuracy": 1.0,
+    "std_accuracy": 0.0,
+    "mean_cos_dtheta": -0.8317104103987081,
+    "seeds": 20
+  },
+  "timing_benchmark": {
+    "hpr_spectral_mse": 0.0009176429610436687,
+    "tau": 20.0,
+    "K_modes": 16
+  }
+}

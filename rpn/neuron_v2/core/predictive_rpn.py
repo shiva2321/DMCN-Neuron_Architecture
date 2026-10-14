@@ -65,9 +65,12 @@ class PredictiveRPN:
             tgt_prefix=self.tgt_prefix,
         )
 
-    def surprise(self, ctx: np.ndarray, target: np.ndarray) -> float:
+    def surprise_hv(self, ctx: np.ndarray, target: np.ndarray) -> float:
         pred = self.predict(ctx)
         return 1.0 - sim(normalise(pred), normalise(target))
+
+    def surprise(self, ctx: np.ndarray, target: np.ndarray) -> float:
+        return self.surprise_hv(ctx, target)
 
     def learn(
         self,
@@ -79,6 +82,22 @@ class PredictiveRPN:
         ctx = self.items[ctx_token]
         target = self.items[target_token]
         s = self.surprise(ctx, target)
+        gate = self.gate_writes if gate_surprise is None else gate_surprise
+        if gate and s < self.surprise_threshold:
+            self.n_writes_skipped += 1
+            return LearnStats(surprise=s, wrote=False)
+        self.mem.write(ctx, target)
+        self.n_writes_applied += 1
+        return LearnStats(surprise=s, wrote=True)
+
+    def learn_hv(
+        self,
+        ctx: np.ndarray,
+        target: np.ndarray,
+        *,
+        gate_surprise: bool | None = None,
+    ) -> LearnStats:
+        s = self.surprise_hv(ctx, target)
         gate = self.gate_writes if gate_surprise is None else gate_surprise
         if gate and s < self.surprise_threshold:
             self.n_writes_skipped += 1

@@ -1,0 +1,29 @@
+{
+  "Track1_RCPN_RCC": {
+    "paradigm": "Biophysical Compartmental Microcircuit",
+    "autonomous_xor_acc": 0.9875,
+    "autonomous_xor_std": 0.054486236794258416,
+    "continuous_delay_mse": 0.030339379113926496,
+    "column_capacity_128": 1.0,
+    "ood_prior_retention": 1.0,
+    "ood_new_location": 1.0,
+    "state_dimension": 6
+  },
+  "Track2_HPR": {
+    "paradigm": "First-Principles Holomorphic Wave-Interference",
+    "autonomous_xor_acc": 1.0,
+    "autonomous_xor_std": 0.0,
+    "anti_phase_alignment_cos": -0.8317104103987081,
+    "continuous_delay_mse": 0.0009176429610436687,
+    "state_dimension": 16
+  },
+  "Baselines": {
+    "point_lif_xor_acc": 0.525,
+    "linear_perceptron_xor_acc": 0.5125,
+    "two_layer_mlp_xor_acc": 0.7875,
+    "tapped_delay_line_mse": 0.02116737312654495,
+    "memoryless_mse": 0.6157304371712711,
+    "monolith_capacity_128": 0.28125,
+    "monolith_ood_retention": 0.14583333333333334
+  }
+}

@@ -9,7 +9,11 @@ import numpy as np
 from ..substrate.phasor import bind, bundle, normalise, permute, random_hv, sim_batch
 from .born_gate import rectified_born
 from .item_table import ItemTable
+from .band_rpn import MultiBandRPN
+from .kuramoto_rpn import KuramotoRPN
+from .predictive_rpn import PredictiveRPN
 from .rpn import RPN
+from .tiered_rpn import TieredRPN
 
 
 def _role_seed(name: str) -> int:
@@ -42,6 +46,58 @@ def vote_read_ctx(
         if token is not None and prob > best_prob:
             best_token, best_prob = token, prob
     return best_token, best_prob
+
+
+def _read_unit_ctx(
+    unit: RPN,
+    D: int,
+    items: ItemTable,
+    ctx: np.ndarray,
+    gate_threshold: float = 0.05,
+    confidence_threshold: float = 0.1,
+    min_resonance: float = 0.1,
+) -> tuple[Optional[str], float]:
+    if isinstance(unit, PredictiveRPN):
+        return unit.read(
+            "",
+            gate_threshold=gate_threshold,
+            confidence_threshold=confidence_threshold,
+            min_resonance=min_resonance,
+            ctx_hv=ctx,
+        )
+    if isinstance(unit, TieredRPN):
+        return unit.read(
+            "",
+            gate_threshold=gate_threshold,
+            confidence_threshold=confidence_threshold,
+            min_resonance=min_resonance,
+            ctx_hv=ctx,
+        )
+    if isinstance(unit, MultiBandRPN):
+        return unit.read(
+            "",
+            gate_threshold=gate_threshold,
+            confidence_threshold=confidence_threshold,
+            min_resonance=min_resonance,
+            ctx_hv=ctx,
+        )
+    if isinstance(unit, KuramotoRPN):
+        return unit.read(
+            "",
+            gate_threshold=gate_threshold,
+            confidence_threshold=confidence_threshold,
+            min_resonance=min_resonance,
+            ctx_hv=ctx,
+        )
+    return _read_rpn_ctx(
+        unit,
+        D,
+        items,
+        ctx,
+        gate_threshold=gate_threshold,
+        confidence_threshold=confidence_threshold,
+        min_resonance=min_resonance,
+    )
 
 
 def _read_rpn_ctx(
