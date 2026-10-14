@@ -1,0 +1,159 @@
+{
+  "throughput": {
+    "HPR_Harmonic_Resonator": {
+      "latency_us": 1.3433200000235956,
+      "throughput_ops_per_sec": 744424.2622624801
+    },
+    "HPR_Wave_Gate": {
+      "latency_us": 2.004659999965952,
+      "throughput_ops_per_sec": 498837.7081485062
+    },
+    "RCPN_Continuous_Delay": {
+      "latency_us": 26.711640000030457,
+      "throughput_ops_per_sec": 37436.862730961475
+    },
+    "RCC_Laminar_Column_Read": {
+      "latency_us": 129.26680000009583,
+      "throughput_ops_per_sec": 7735.938384792218
+    }
+  },
+  "memory_scaling": {
+    "D64_S1": {
+      "D": 64,
+      "shards": 1,
+      "total_elements": 4096,
+      "bytes": 32768,
+      "mb": 0.03125
+    },
+    "D64_S8": {
+      "D": 64,
+      "shards": 8,
+      "total_elements": 32768,
+      "bytes": 262144,
+      "mb": 0.25
+    },
+    "D64_S32": {
+      "D": 64,
+      "shards": 32,
+      "total_elements": 131072,
+      "bytes": 1048576,
+      "mb": 1.0
+    },
+    "D128_S1": {
+      "D": 128,
+      "shards": 1,
+      "total_elements": 16384,
+      "bytes": 131072,
+      "mb": 0.125
+    },
+    "D128_S8": {
+      "D": 128,
+      "shards": 8,
+      "total_elements": 131072,
+      "bytes": 1048576,
+      "mb": 1.0
+    },
+    "D128_S32": {
+      "D": 128,
+      "shards": 32,
+      "total_elements": 524288,
+      "bytes": 4194304,
+      "mb": 4.0
+    },
+    "D256_S1": {
+      "D": 256,
+      "shards": 1,
+      "total_elements": 65536,
+      "bytes": 524288,
+      "mb": 0.5
+    },
+    "D256_S8": {
+      "D": 256,
+      "shards": 8,
+      "total_elements": 524288,
+      "bytes": 4194304,
+      "mb": 4.0
+    },
+    "D256_S32": {
+      "D": 256,
+      "shards": 32,
+      "total_elements": 2097152,
+      "bytes": 16777216,
+      "mb": 16.0
+    },
+    "D512_S1": {
+      "D": 512,
+      "shards": 1,
+      "total_elements": 262144,
+      "bytes": 2097152,
+      "mb": 2.0
+    },
+    "D512_S8": {
+      "D": 512,
+      "shards": 8,
+      "total_elements": 2097152,
+      "bytes": 16777216,
+      "mb": 16.0
+    },
+    "D512_S32": {
+      "D": 512,
+      "shards": 32,
+      "total_elements": 8388608,
+      "bytes": 67108864,
+      "mb": 64.0
+    },
+    "D1024_S1": {
+      "D": 1024,
+      "shards": 1,
+      "total_elements": 1048576,
+      "bytes": 8388608,
+      "mb": 8.0
+    },
+    "D1024_S8": {
+      "D": 1024,
+      "shards": 8,
+      "total_elements": 8388608,
+      "bytes": 67108864,
+      "mb": 64.0
+    },
+    "D1024_S32": {
+      "D": 1024,
+      "shards": 32,
+      "total_elements": 33554432,
+      "bytes": 268435456,
+      "mb": 256.0
+    }
+  },
+  "vocabulary_cleanup_scaling": {
+    "100": {
+      "V": 100,
+      "latency_us": 4.429999999047141,
+      "queries_per_sec": 225733.634360066
+    },
+    "500": {
+      "V": 500,
+      "latency_us": 15.338999999130467,
+      "queries_per_sec": 65193.29813264801
+    },
+    "1000": {
+      "V": 1000,
+      "latency_us": 101.77699999985634,
+      "queries_per_sec": 9825.402595885234
+    },
+    "5000": {
+      "V": 5000,
+      "latency_us": 107.9634999996415,
+      "queries_per_sec": 9262.389603924665
+    },
+    "10000": {
+      "V": 10000,
+      "latency_us": 145.97999999750755,
+      "queries_per_sec": 6850.2534594949575
+    },
+    "50000": {
+      "V": 50000,
+      "latency_us": 2465.8180000005814,
+      "queries_per_sec": 405.5449347842234
+    }
+  }
+}
