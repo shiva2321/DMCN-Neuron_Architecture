@@ -1,0 +1,59 @@
+{
+  "noise_cleanup": {
+    "crfn_radial_error_no_dictionary": {
+      "0.0": 6.036520172614246e-10,
+      "0.5": 0.0006892548399937137,
+      "1.0": 0.0009308306751349971,
+      "1.5": 0.0010427049340908656,
+      "2.0": 0.0011034902649877942
+    },
+    "vsa_unassisted_sim_no_dictionary": {
+      "0.0": 1.0,
+      "0.5": 0.9327921867370605,
+      "1.0": 0.6111128330230713,
+      "1.5": 0.3065935969352722,
+      "2.0": 0.2010781168937683
+    },
+    "vsa_assisted_sim_with_dictionary": {
+      "0.0": 0.9999999403953552,
+      "0.5": 0.9999999403953552,
+      "1.0": 0.9999999403953552,
+      "1.5": 0.9999999403953552,
+      "2.0": 0.9999999403953552
+    }
+  },
+  "wave_xor": {
+    "patterns": {
+      "(0, 0)": {
+        "target": 0,
+        "somatic_amplitude": 0.0,
+        "prediction": 0,
+        "correct": true
+      },
+      "(1, 0)": {
+        "target": 1,
+        "somatic_amplitude": 0.6384841794757018,
+        "prediction": 1,
+        "correct": true
+      },
+      "(0, 1)": {
+        "target": 1,
+        "somatic_amplitude": 0.6384841794757018,
+        "prediction": 1,
+        "correct": true
+      },
+      "(1, 1)": {
+        "target": 0,
+        "somatic_amplitude": 9.44293609223651e-17,
+        "prediction": 0,
+        "correct": true
+      }
+    },
+    "accuracy": 1.0
+  },
+  "memory_footprint": {
+    "vsa_bytes": 21004288,
+    "crfn_bytes": 1040,
+    "reduction_factor": 20196.43076923077
+  }
+}

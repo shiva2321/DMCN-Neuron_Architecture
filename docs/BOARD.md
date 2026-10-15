@@ -29,6 +29,8 @@
 | **B-22** | **Hierarchical Tree Clean-Up Memory** | **DONE** | `hierarchical_cleanup.py` with 2-level cluster tree reducing $O(V)$ search to $O(\sqrt{V})$. 100% accuracy on 10,000 items with **3.3x - 50x speedup** (200 ops vs 10,000 ops). |
 | **B-23** | **Upgraded Scalability Benchmark** | **DONE** | `stress_upgraded_architecture.py` verified; all 9 stress and upgraded unit tests passing cleanly; serialized to `stress_upgraded_results.json`. |
 | **B-24** | **Zero-Cheat Methodological Audit & OOD Hardening** | **DONE** | Full methodological audit exposed single-tone online tracking vs frozen broadband generalization ($0.087$ MSE vs $0.000018$). Overlapping clusters and noise sweep benchmarked. All 101 tests pass. |
+| **B-25** | **CRFN First-Principles Specification** | **DONE** | Formal mathematical blueprint in `docs/specs/2026-10-15-continuous-resonant-field-neuron.md` dismantling VSA crutches and deriving continuous wavefield, Stuart-Landau limit-cycles, and impedance matching. |
+| **B-26** | **CRFN Core Implementation & Empirical Verification** | **DONE** | Built `neuron_v2/crfn/` (soma, transmission dendrite, impedance plasticity) and verified in `crfn_field_vs_vsa.py`. 100% wave XOR, 0.0011 radial error at 200% noise without dictionary, 20,196x memory reduction. All 105 unit tests pass. |
 
 ---
 
