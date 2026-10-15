@@ -1,0 +1,199 @@
+{
+  "n_demo_episodes": 3,
+  "n_autonomous_episodes": 10,
+  "wall_time_s": 25.72144739999203,
+  "autonomous_success_rate": 10.0,
+  "demo_results": [
+    {
+      "episode": 1,
+      "mode": "GUIDED DEMO",
+      "steps": 377,
+      "goal": true,
+      "collisions": 0,
+      "final_pos": [
+        3.5,
+        3.5
+      ],
+      "goal_dist": 0.0,
+      "neurons": 12
+    },
+    {
+      "episode": 2,
+      "mode": "GUIDED DEMO",
+      "steps": 377,
+      "goal": true,
+      "collisions": 0,
+      "final_pos": [
+        3.5,
+        3.5
+      ],
+      "goal_dist": 0.0,
+      "neurons": 17
+    },
+    {
+      "episode": 3,
+      "mode": "GUIDED DEMO",
+      "steps": 377,
+      "goal": true,
+      "collisions": 0,
+      "final_pos": [
+        3.5,
+        3.5
+      ],
+      "goal_dist": 0.0,
+      "neurons": 18
+    }
+  ],
+  "autonomous_results": [
+    {
+      "episode": 4,
+      "mode": "AUTONOMOUS",
+      "steps": 600,
+      "goal": false,
+      "collisions": 3,
+      "final_pos": [
+        0.15,
+        0.15
+      ],
+      "goal_dist": 4.737615433949869,
+      "neurons": 18
+    },
+    {
+      "episode": 5,
+      "mode": "AUTONOMOUS",
+      "steps": 600,
+      "goal": false,
+      "collisions": 5,
+      "final_pos": [
+        0.15,
+        0.15
+      ],
+      "goal_dist": 4.737615433949869,
+      "neurons": 18
+    },
+    {
+      "episode": 6,
+      "mode": "AUTONOMOUS",
+      "steps": 600,
+      "goal": false,
+      "collisions": 0,
+      "final_pos": [
+        0.15,
+        0.15
+      ],
+      "goal_dist": 4.737615433949869,
+      "neurons": 18
+    },
+    {
+      "episode": 7,
+      "mode": "AUTONOMOUS",
+      "steps": 600,
+      "goal": false,
+      "collisions": 25,
+      "final_pos": [
+        0.15,
+        0.15
+      ],
+      "goal_dist": 4.737615433949869,
+      "neurons": 18
+    },
+    {
+      "episode": 8,
+      "mode": "AUTONOMOUS",
+      "steps": 600,
+      "goal": false,
+      "collisions": 0,
+      "final_pos": [
+        0.15,
+        0.15
+      ],
+      "goal_dist": 4.737615433949869,
+      "neurons": 18
+    },
+    {
+      "episode": 9,
+      "mode": "AUTONOMOUS",
+      "steps": 398,
+      "goal": true,
+      "collisions": 2,
+      "final_pos": [
+        3.1655449578291495,
+        3.352760231943552
+      ],
+      "goal_dist": 0.3654308751745288,
+      "neurons": 18
+    },
+    {
+      "episode": 10,
+      "mode": "AUTONOMOUS",
+      "steps": 600,
+      "goal": false,
+      "collisions": 8,
+      "final_pos": [
+        0.15,
+        0.15
+      ],
+      "goal_dist": 4.737615433949869,
+      "neurons": 18
+    },
+    {
+      "episode": 11,
+      "mode": "AUTONOMOUS",
+      "steps": 600,
+      "goal": false,
+      "collisions": 24,
+      "final_pos": [
+        0.15,
+        0.15
+      ],
+      "goal_dist": 4.737615433949869,
+      "neurons": 18
+    },
+    {
+      "episode": 12,
+      "mode": "AUTONOMOUS",
+      "steps": 600,
+      "goal": false,
+      "collisions": 9,
+      "final_pos": [
+        0.15,
+        0.15
+      ],
+      "goal_dist": 4.737615433949869,
+      "neurons": 18
+    },
+    {
+      "episode": 13,
+      "mode": "AUTONOMOUS",
+      "steps": 600,
+      "goal": false,
+      "collisions": 2,
+      "final_pos": [
+        0.15,
+        0.15
+      ],
+      "goal_dist": 4.737615433949869,
+      "neurons": 18
+    }
+  ],
+  "final_emergent_roles": {
+    "0": "Motor Specialist",
+    "1": "Motor Specialist",
+    "2": "Motor Specialist",
+    "3": "Motor Specialist",
+    "4": "Motor Specialist",
+    "5": "Motor Specialist",
+    "6": "Motor Specialist",
+    "7": "Motor Specialist",
+    "8": "Motor Specialist",
+    "9": "Motor Specialist",
+    "10": "Motor Specialist",
+    "11": "Motor Specialist",
+    "12": "Motor Specialist",
+    "13": "Motor Specialist",
+    "14": "Motor Specialist",
+    "15": "Motor Specialist",
+    "16": "Motor Specialist",
+    "17": "Motor Specialist"
+  }
+}

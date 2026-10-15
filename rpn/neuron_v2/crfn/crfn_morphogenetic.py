@@ -85,6 +85,7 @@ class MorphogeneticCRFNSubstrate:
         n_sensory_ports: int = 2,
         n_actuator_ports: int = 2,
         base_omega: float = 2.0,
+        base_mu: float = -0.05,
         gamma_discount: float = 0.90,
         lr_rl: float = 1.20,
         lr_pred: float = 0.05,
@@ -96,6 +97,7 @@ class MorphogeneticCRFNSubstrate:
     ):
         self.rng = np.random.RandomState(seed)
         self.base_omega = float(base_omega)
+        self.base_mu = float(base_mu)
         self.gamma = float(gamma_discount)
         self.lr_rl = float(lr_rl)
         self.lr_pred = float(lr_pred)
@@ -150,12 +152,13 @@ class MorphogeneticCRFNSubstrate:
         self.steps_since_growth = 0
         self.growth_cooldown = 80
 
-    def _spawn_neuron(self, omega: float, mu: float = -0.05) -> int:
+    def _spawn_neuron(self, omega: float, mu: float | None = None) -> int:
         """Spawn a completely identical pluripotent physical neuron."""
         nid = self.next_neuron_id
         self.next_neuron_id += 1
+        effective_mu = self.base_mu if mu is None else float(mu)
 
-        soma = StuartLandauSoma(mu=mu, omega=omega, kappa=2.5, z_init=0.0)
+        soma = StuartLandauSoma(mu=effective_mu, omega=omega, kappa=2.5, z_init=0.0)
         dendrite = TransmissionLineDendrite(length=2.0, n_nodes=15, velocity=4.0, damping=0.02)
         dendrite.attach_synapse(0, relative_pos=0.15)  # Default primary trunk entry
 
@@ -213,6 +216,7 @@ class MorphogeneticCRFNSubstrate:
         sensory_inputs: dict[int, complex | float],
         reward: float = 0.0,
         dt: float = 0.02,
+        teacher_actuator_fluxes: dict[int, complex] | None = None,
     ) -> dict[str, Any]:
         """Execute one continuous wave step with emergent role differentiation."""
         soma_states = {nid: s.z for nid, s in self.somas.items()}
@@ -274,6 +278,11 @@ class MorphogeneticCRFNSubstrate:
                 tx_flux = link.transmit(new_soma_states[nid])
                 self.actuator_ports[port_id].receive_flux(tx_flux)
 
+        if teacher_actuator_fluxes is not None:
+            for port_id, flux in teacher_actuator_fluxes.items():
+                if 0 <= port_id < len(self.actuator_ports):
+                    self.actuator_ports[port_id].receive_flux(complex(flux))
+
         # 5. Continuous Metabolic Expectation & Dopamine RPE Computation
         # Deviation from running physical baseline: delta(t) = r(t) - R_bar(t)
         rpe = float(reward) - self.expected_reward_baseline
@@ -282,12 +291,13 @@ class MorphogeneticCRFNSubstrate:
         self.last_rpe = rpe
 
         # 6. Three-Factor Neuromodulation & Predictive Plasticity Across All Links
-        # A. Afferent links adapt predictively to minimize sensory error
+        # A. Afferent links adapt predictively and via global dopamine RPE
         for (port_id, nid), link in self.afferent_links.items():
             z_post = new_soma_states[nid]
             port_w = effective_port_waves.get(port_id, 0.0 + 0.0j)
             link.update_eligibility(z_post, port_w, dt=dt)
             link.adapt_predictive(z_post, self.dendrites[nid].nexus_flux, dt=dt)
+            link.apply_neuromodulation(delta_dopamine=rpe, dt=dt)
 
         # B. Recurrent links adapt via resonance + eligibility
         for (src, dst), link in self.recurrent_links.items():
