@@ -156,11 +156,11 @@ class NeuromodulatedSynapticLink:
 
         self.synapse.Z += (dZ_rl + dZ_relax) * dt
 
-        # Enforce physical passive resistance constraint: Re(Z) >= 0.1
+        # Enforce physical passive resistance constraint: 0.1 <= Re(Z) <= 100.0
         if self.synapse.Z.real < 0.1:
             self.synapse.Z = complex(0.1, self.synapse.Z.imag)
-        elif self.synapse.Z.real > 10.0:
-            self.synapse.Z = complex(10.0, self.synapse.Z.imag)
+        elif self.synapse.Z.real > 100.0:
+            self.synapse.Z = complex(100.0, self.synapse.Z.imag)
 
     def adapt_predictive(self, somatic_wave: complex, local_dendritic_wave: complex, dt: float = 0.02):
         """Unsupervised predictive impedance adaptation via maximum power transfer."""

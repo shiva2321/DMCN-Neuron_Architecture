@@ -208,9 +208,9 @@ def test_arnold_tongue_frequency_selective_learning():
     omega_ext = 2.05  # External drive frequency
 
     # Resonant neuron (natural freq = 2.00, detuning = 0.05 rad/s -> inside Arnold tongue)
-    soma_resonant = StuartLandauSoma(mu=1.0, omega=2.00, kappa=1.5)
+    soma_resonant = StuartLandauSoma(mu=1.0, omega=2.00, kappa=1.5, z_init=1.0)
     # Detuned neuron (natural freq = 5.00, detuning = 2.95 rad/s -> far outside Arnold tongue)
-    soma_detuned = StuartLandauSoma(mu=1.0, omega=5.00, kappa=1.5)
+    soma_detuned = StuartLandauSoma(mu=1.0, omega=5.00, kappa=1.5, z_init=1.0)
 
     link_resonant = NeuromodulatedSynapticLink(source_id=0, target_id=1, z_init=3.0, lr_rl=1.0)
     link_detuned = NeuromodulatedSynapticLink(source_id=0, target_id=2, z_init=3.0, lr_rl=1.0)

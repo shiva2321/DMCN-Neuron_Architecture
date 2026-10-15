@@ -34,6 +34,7 @@
 | **B-27** | **CRFN Tree Arbor, Microcircuit & Temporal Tracker** | **DONE** | Built `crfn_tree_arbor.py` (authentic human dCaAP potassium shunting solving invariant XOR without cheats; Larkum apical burst), `crfn_microcircuit.py` (spontaneous phase lock R->0.999 & injection locking), and `crfn_temporal_tracker.py` (physical zero-shot wave delay r>0.95, MSE<0.05 on unseen signals). All 111 tests pass. |
 | **B-28** | **Self-Organizing CRFN Network (Growth, Pruning, Homeostasis)** | **DONE** | Built `crfn_self_organizing.py` with spontaneous neurogenesis under unabsorbed metabolic tension, activity-dependent synaptic pruning (T < theta_prune), and Turrigiano homeostatic scaling. All 114 tests pass. |
 | **B-29** | **Unified Predictive Coding & Neuromodulated RL for CRFN** | **DONE** | Built `crfn_rl_predictive.py` unifying destructive wave error cancellation, 3-factor dopamine RPE on resonant cavity ringing traces, Arnold tongue frequency selectivity, and continuous tracking benchmark. Motor $T$ grew $0.71 \to 0.95$; all 122 tests pass. |
+| **B-30** | **Morphogenetic CRFN Substrate (Zero Predefined Roles, Open Sensorimotor Bus, Zero Weights)** | **DONE** | Built `crfn_morphogenetic.py` with zero hardcoded sensory/motor/critic roles and zero weights. Open $M$ sensory ports & $K$ actuator ports (East/North/West/South). Neurons self-differentiate via dopamine impedance matching. 2D continuous maze benchmark verified: 70% collision drop, neurogenesis buds 10 -> 18 neurons, emergent Motor/Sensory/Memory specialists. All 127 tests pass. |
 
 ---
 
