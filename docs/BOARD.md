@@ -32,6 +32,7 @@
 | **B-25** | **CRFN First-Principles Specification** | **DONE** | Formal mathematical blueprint in `docs/specs/2026-10-15-continuous-resonant-field-neuron.md` dismantling VSA crutches and deriving continuous wavefield, Stuart-Landau limit-cycles, and impedance matching. |
 | **B-26** | **CRFN Core Implementation & Empirical Verification** | **DONE** | Built `neuron_v2/crfn/` (soma, transmission dendrite, impedance plasticity) and verified in `crfn_field_vs_vsa.py`. 100% wave XOR, 0.0011 radial error at 200% noise without dictionary, 20,196x memory reduction. All 105 unit tests pass. |
 | **B-27** | **CRFN Tree Arbor, Microcircuit & Temporal Tracker** | **DONE** | Built `crfn_tree_arbor.py` (authentic human dCaAP potassium shunting solving invariant XOR without cheats; Larkum apical burst), `crfn_microcircuit.py` (spontaneous phase lock R->0.999 & injection locking), and `crfn_temporal_tracker.py` (physical zero-shot wave delay r>0.95, MSE<0.05 on unseen signals). All 111 tests pass. |
+| **B-28** | **Self-Organizing CRFN Network (Growth, Pruning, Homeostasis)** | **DONE** | Built `crfn_self_organizing.py` with spontaneous neurogenesis under unabsorbed metabolic tension, activity-dependent synaptic pruning (T < theta_prune), and Turrigiano homeostatic scaling. All 114 tests pass. |
 
 ---
 
