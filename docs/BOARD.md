@@ -31,6 +31,7 @@
 | **B-24** | **Zero-Cheat Methodological Audit & OOD Hardening** | **DONE** | Full methodological audit exposed single-tone online tracking vs frozen broadband generalization ($0.087$ MSE vs $0.000018$). Overlapping clusters and noise sweep benchmarked. All 101 tests pass. |
 | **B-25** | **CRFN First-Principles Specification** | **DONE** | Formal mathematical blueprint in `docs/specs/2026-10-15-continuous-resonant-field-neuron.md` dismantling VSA crutches and deriving continuous wavefield, Stuart-Landau limit-cycles, and impedance matching. |
 | **B-26** | **CRFN Core Implementation & Empirical Verification** | **DONE** | Built `neuron_v2/crfn/` (soma, transmission dendrite, impedance plasticity) and verified in `crfn_field_vs_vsa.py`. 100% wave XOR, 0.0011 radial error at 200% noise without dictionary, 20,196x memory reduction. All 105 unit tests pass. |
+| **B-27** | **CRFN Tree Arbor, Microcircuit & Temporal Tracker** | **DONE** | Built `crfn_tree_arbor.py` (authentic human dCaAP potassium shunting solving invariant XOR without cheats; Larkum apical burst), `crfn_microcircuit.py` (spontaneous phase lock R->0.999 & injection locking), and `crfn_temporal_tracker.py` (physical zero-shot wave delay r>0.95, MSE<0.05 on unseen signals). All 111 tests pass. |
 
 ---
 
