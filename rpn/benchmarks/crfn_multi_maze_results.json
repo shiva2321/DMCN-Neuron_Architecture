@@ -1,0 +1,271 @@
+{
+  "wall_time_s": 61.40047300001606,
+  "n_epochs": 4,
+  "eval_runs_per_maze": 3,
+  "seen_success_rate": 33.33333333333333,
+  "seen_successes": 3,
+  "seen_total": 9,
+  "unseen_success_rate": 44.44444444444444,
+  "unseen_successes": 4,
+  "unseen_total": 9,
+  "seen_eval_results": [
+    {
+      "maze": "Maze 1 (S-Bend)",
+      "type": "SEEN",
+      "run": 1,
+      "steps": 600,
+      "goal": false,
+      "collisions": 84,
+      "final_pos": [
+        3.801193338612988,
+        0.15
+      ],
+      "goal_dist": 3.363512661968859
+    },
+    {
+      "maze": "Maze 1 (S-Bend)",
+      "type": "SEEN",
+      "run": 2,
+      "steps": 180,
+      "goal": true,
+      "collisions": 10,
+      "final_pos": [
+        3.328026061598315,
+        3.8356314932539046
+      ],
+      "goal_dist": 0.3771253568155189
+    },
+    {
+      "maze": "Maze 1 (S-Bend)",
+      "type": "SEEN",
+      "run": 3,
+      "steps": 600,
+      "goal": false,
+      "collisions": 88,
+      "final_pos": [
+        3.8056832925414623,
+        0.15
+      ],
+      "goal_dist": 3.3639176974680858
+    },
+    {
+      "maze": "Maze 2 (Horseshoe U)",
+      "type": "SEEN",
+      "run": 1,
+      "steps": 600,
+      "goal": false,
+      "collisions": 85,
+      "final_pos": [
+        3.8119444771607736,
+        0.15
+      ],
+      "goal_dist": 0.8927351472455716
+    },
+    {
+      "maze": "Maze 2 (Horseshoe U)",
+      "type": "SEEN",
+      "run": 2,
+      "steps": 600,
+      "goal": false,
+      "collisions": 78,
+      "final_pos": [
+        3.83921829720997,
+        0.15
+      ],
+      "goal_dist": 0.91164687872444
+    },
+    {
+      "maze": "Maze 2 (Horseshoe U)",
+      "type": "SEEN",
+      "run": 3,
+      "steps": 141,
+      "goal": true,
+      "collisions": 4,
+      "final_pos": [
+        2.9477241061079287,
+        0.5176309514949872
+      ],
+      "goal_dist": 0.3786494502738252
+    },
+    {
+      "maze": "Maze 3 (Reverse Hook)",
+      "type": "SEEN",
+      "run": 1,
+      "steps": 600,
+      "goal": false,
+      "collisions": 79,
+      "final_pos": [
+        3.82869947531268,
+        1.8319183987703067
+      ],
+      "goal_dist": 3.4147339097571043
+    },
+    {
+      "maze": "Maze 3 (Reverse Hook)",
+      "type": "SEEN",
+      "run": 2,
+      "steps": 323,
+      "goal": true,
+      "collisions": 28,
+      "final_pos": [
+        0.5558476186759936,
+        3.3976015339129546
+      ],
+      "goal_dist": 0.24459410304856943
+    },
+    {
+      "maze": "Maze 3 (Reverse Hook)",
+      "type": "SEEN",
+      "run": 3,
+      "steps": 600,
+      "goal": false,
+      "collisions": 87,
+      "final_pos": [
+        3.848113598112283,
+        0.15
+      ],
+      "goal_dist": 4.383277224477077
+    }
+  ],
+  "unseen_eval_results": [
+    {
+      "maze": "Unseen Maze 4 (Central Box)",
+      "type": "UNSEEN (OOD)",
+      "run": 1,
+      "steps": 107,
+      "goal": true,
+      "collisions": 3,
+      "final_pos": [
+        3.557527582860068,
+        3.2021420126128097
+      ],
+      "goal_dist": 0.25290852602204844
+    },
+    {
+      "maze": "Unseen Maze 4 (Central Box)",
+      "type": "UNSEEN (OOD)",
+      "run": 2,
+      "steps": 176,
+      "goal": true,
+      "collisions": 5,
+      "final_pos": [
+        3.4813250193428793,
+        3.7443171692437724
+      ],
+      "goal_dist": 0.3537910001783036
+    },
+    {
+      "maze": "Unseen Maze 4 (Central Box)",
+      "type": "UNSEEN (OOD)",
+      "run": 3,
+      "steps": 70,
+      "goal": true,
+      "collisions": 3,
+      "final_pos": [
+        3.6765581219916568,
+        3.682857221387796
+      ],
+      "goal_dist": 0.39559145912263677
+    },
+    {
+      "maze": "Unseen Maze 5 (Staggered Slits)",
+      "type": "UNSEEN (OOD)",
+      "run": 1,
+      "steps": 600,
+      "goal": false,
+      "collisions": 91,
+      "final_pos": [
+        3.837012122266527,
+        0.15
+      ],
+      "goal_dist": 4.587019454907559
+    },
+    {
+      "maze": "Unseen Maze 5 (Staggered Slits)",
+      "type": "UNSEEN (OOD)",
+      "run": 2,
+      "steps": 600,
+      "goal": false,
+      "collisions": 85,
+      "final_pos": [
+        3.8394623247296207,
+        0.15
+      ],
+      "goal_dist": 4.588748865795843
+    },
+    {
+      "maze": "Unseen Maze 5 (Staggered Slits)",
+      "type": "UNSEEN (OOD)",
+      "run": 3,
+      "steps": 600,
+      "goal": false,
+      "collisions": 82,
+      "final_pos": [
+        3.7909681165614817,
+        2.9579602559741986
+      ],
+      "goal_dist": 3.221440152511036
+    },
+    {
+      "maze": "Unseen Maze 6 (T-Junction)",
+      "type": "UNSEEN (OOD)",
+      "run": 1,
+      "steps": 600,
+      "goal": false,
+      "collisions": 90,
+      "final_pos": [
+        1.8467211077585561,
+        2.3076968290866104
+      ],
+      "goal_dist": 1.4400438091522105
+    },
+    {
+      "maze": "Unseen Maze 6 (T-Junction)",
+      "type": "UNSEEN (OOD)",
+      "run": 2,
+      "steps": 375,
+      "goal": true,
+      "collisions": 49,
+      "final_pos": [
+        3.1870148117817774,
+        2.638471803311283
+      ],
+      "goal_dist": 0.1620492932368775
+    },
+    {
+      "maze": "Unseen Maze 6 (T-Junction)",
+      "type": "UNSEEN (OOD)",
+      "run": 3,
+      "steps": 600,
+      "goal": false,
+      "collisions": 79,
+      "final_pos": [
+        0.15,
+        3.779903447134829
+      ],
+      "goal_dist": 3.2035465917802295
+    }
+  ],
+  "emergent_roles": {
+    "0": "Motor Specialist",
+    "1": "Motor Specialist",
+    "2": "Motor Specialist",
+    "3": "Motor Specialist",
+    "4": "Motor Specialist",
+    "5": "Motor Specialist",
+    "6": "Motor Specialist",
+    "7": "Motor Specialist",
+    "8": "Motor Specialist",
+    "9": "Motor Specialist",
+    "10": "Motor Specialist",
+    "11": "Motor Specialist",
+    "12": "Undifferentiated Pluripotent",
+    "13": "Motor Specialist",
+    "14": "Motor Specialist",
+    "15": "Undifferentiated Pluripotent",
+    "16": "Motor Specialist",
+    "17": "Undifferentiated Pluripotent",
+    "18": "Motor Specialist",
+    "19": "Motor Specialist"
+  }
+}
