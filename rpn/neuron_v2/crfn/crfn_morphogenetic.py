@@ -141,7 +141,7 @@ class MorphogeneticCRFNSubstrate:
             # Connect neurons to actuator ports (initially high impedance / mismatched)
             for ap in self.actuator_ports:
                 if self.rng.uniform(0, 1) < 0.8:
-                    self._create_efferent_link(nid, ap.id, z_init=3.5)
+                    self._create_efferent_link(nid, ap.id, z_init=5.0)
 
         # Continuous physical metabolic expectation baseline (no artificial linear weight vectors)
         self.expected_reward_baseline = 0.0
@@ -299,17 +299,21 @@ class MorphogeneticCRFNSubstrate:
             link.adapt_predictive(z_post, self.dendrites[nid].nexus_flux, dt=dt)
             link.apply_neuromodulation(delta_dopamine=rpe, dt=dt)
 
-        # B. Recurrent links adapt via resonance + eligibility
+        # B. Recurrent links adapt via resonance + eligibility + dopamine
         for (src, dst), link in self.recurrent_links.items():
             z_post = new_soma_states[dst]
             psi_pre = soma_states[src]
             link.update_eligibility(z_post, psi_pre, dt=dt)
             link.adapt_predictive(z_post, self.dendrites[dst].nexus_flux, dt=dt)
+            link.apply_neuromodulation(delta_dopamine=rpe, dt=dt)
 
         # C. Efferent links adapt via Dopamine RPE on resonant ringing traces
         for (nid, port_id), link in self.efferent_links.items():
             # Actuator channel post-synaptic activity is the continuous wave flux at that port
-            z_post = self.actuator_ports[port_id].transmitted_flux
+            if teacher_actuator_fluxes is not None:
+                z_post = teacher_actuator_fluxes.get(port_id, 0.0 + 0.0j)
+            else:
+                z_post = self.actuator_ports[port_id].transmitted_flux
             psi_pre = new_soma_states[nid]
             link.update_eligibility(z_post, psi_pre, dt=dt)
             link.apply_neuromodulation(delta_dopamine=rpe, dt=dt)
@@ -337,7 +341,7 @@ class MorphogeneticCRFNSubstrate:
 
             # Sprout exploratory efferent connection to an actuator port
             act_p = self.rng.choice(self.actuator_ports)
-            self._create_efferent_link(new_nid, act_p.id, z_init=3.5)
+            self._create_efferent_link(new_nid, act_p.id, z_init=5.0)
 
         # Pruning: Sever links that consistently reflect power (T < theta_prune)
         prune_recurrent = [
