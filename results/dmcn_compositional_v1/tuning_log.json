@@ -1,0 +1,65 @@
+{
+  "tuning_entries": [
+    {
+      "run_index": 1,
+      "seed": 999,
+      "elapsed_sec": 2.946713400000135,
+      "metrics": {
+        "seed": 999,
+        "t1_attr_dmcn_fac_acc": 100.0,
+        "t1_attr_dense_dmcn_acc": 71.0,
+        "t1_attr_mlp_adam_acc": 100.0,
+        "t1_attr_mlp_sgd_acc": 100.0,
+        "t1_attr_untrained_acc": 0.0,
+        "t1_attr_blind_acc": 0.0,
+        "t1_attr_shuffled_acc": 0.0,
+        "t2_rule_dmcn_fac_mse": 0.0007568252691517272,
+        "t2_rule_dmcn_fac_acc": 100.0,
+        "t2_rule_ablate_bilinear_mse": 0.2026693916461846,
+        "t2_rule_ablate_bilinear_acc": 16.666666666666668,
+        "t2_rule_dense_dmcn_mse": 0.12161140174190414,
+        "t2_rule_dense_dmcn_acc": 41.666666666666664,
+        "t2_rule_mlp_adam_mse": 0.03771747757675048,
+        "t2_rule_mlp_adam_acc": 83.33333333333333,
+        "t2_rule_mlp_sgd_mse": 0.08791716694731597,
+        "t2_rule_mlp_sgd_acc": 58.333333333333336,
+        "t2_rule_untrained_acc": 8.333333333333334,
+        "t2_rule_blind_acc": 0.0,
+        "t2_rule_shuffled_acc": 0.0
+      }
+    }
+  ],
+  "_meta": {
+    "exp_id": "dmcn_compositional_v1_val",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_seed_999"
+    },
+    "command": "rpn/benchmarks/dmcn_compositional_benchmark.py --mode val",
+    "timestamp_utc": "2026-11-25T06:33:49+00:00",
+    "python": "3.12.10"
+  }
+}

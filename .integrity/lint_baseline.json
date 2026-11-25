@@ -1,0 +1,391 @@
+{
+  "version": 1,
+  "note": "Grandfathered violations. May only shrink. Fix the code, then run --shrink-baseline.",
+  "violations": [
+    {
+      "rule": "UNUSED_LOCAL_VARIABLE",
+      "file": "rpn/benchmarks/baselines.py",
+      "snippet": "n = len(probs)",
+      "sig": "19be3dc9055d45b8",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/compositional_bind.py",
+      "snippet": "baseline_best <= threshold,",
+      "sig": "e22a3fd6fd894068",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/compositional_generalization.py",
+      "snippet": "and single_acc <= cfg.capacity_single_max",
+      "sig": "2f13aefa10db797e",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/compositional_generalization.py",
+      "snippet": "and single_ret <= cfg.adapt_single_retention_max",
+      "sig": "837d85ae4d14b0af",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/compositional_generalization.py",
+      "snippet": "passed = rpc_acc >= cfg.bind_min_acc and single_acc <= cfg.bind_single_max",
+      "sig": "aee00b6124d2d93a",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/compositional_ood.py",
+      "snippet": "and one_single <= cfg.holdout_single_max",
+      "sig": "52fe7939a9c2b1ca",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/compositional_ood.py",
+      "snippet": "and single_ret <= cfg.new_what_single_retention_max",
+      "sig": "1df835a4b5b4badf",
+      "count": 1
+    },
+    {
+      "rule": "LABEL_CONDITIONED_STIMULUS",
+      "file": "rpn/benchmarks/crfn_field_vs_vsa.py",
+      "snippet": "phase1 = np.pi if pat_str == \"(1, 1)\" else 0.0",
+      "sig": "eed4eb60fac04a4d",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/crfn_field_vs_vsa.py",
+      "snippet": "print(f\"{'Memory Storage':<32} {'1.0 KB (Local Impedance)':<26} {'21.0 MB (External Matrix+Dict)'}\")",
+      "sig": "2f351d6459f8d4cc",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/crfn_field_vs_vsa.py",
+      "snippet": "print(f\"{'Non-Linear Logic (XOR)':<32} {'100% (Wave Collision)':<26} {'Requires Multi-Layer Bindings'}\")",
+      "sig": "3fbb608f4dc028da",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/crfn_field_vs_vsa.py",
+      "snippet": "print(f\"{'Radial Error @ 200% Noise':<32} {noise_res['crfn_radial_error_no_dictionary']['2.0']:<26.6f} {'Decays to 0.44 without Dict'}\")",
+      "sig": "03ef18977022ed5d",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_LOCAL_VARIABLE",
+      "file": "rpn/benchmarks/crfn_learning_benchmark.py",
+      "snippet": "rng = np.random.RandomState(seed)",
+      "sig": "fa3665e28114c9c4",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_LOCAL_VARIABLE",
+      "file": "rpn/benchmarks/crfn_learning_benchmark.py",
+      "snippet": "v_target = float(omega_target * np.cos(omega_target * t))",
+      "sig": "72e74d4539f2a22c",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_LOCAL_VARIABLE",
+      "file": "rpn/benchmarks/crfn_maze_benchmark.py",
+      "snippet": "rng = np.random.RandomState(seed)",
+      "sig": "352f3c0332c8c24b",
+      "count": 1
+    },
+    {
+      "rule": "FORCED_SUCCESS_FLAG",
+      "file": "rpn/benchmarks/crfn_maze_demonstration_benchmark.py",
+      "snippet": "reached_goal = True",
+      "sig": "8466e8b4af1022d8",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_LOCAL_VARIABLE",
+      "file": "rpn/benchmarks/crfn_maze_demonstration_benchmark.py",
+      "snippet": "prev_goal_dist = np.hypot(pos[0] - maze.goal_pos[0], pos[1] - maze.goal_pos[1])",
+      "sig": "6ab41ab278873fff",
+      "count": 1
+    },
+    {
+      "rule": "SWALLOWED_EXCEPTION",
+      "file": "rpn/benchmarks/crfn_maze_gui.py",
+      "snippet": "except Exception:",
+      "sig": "2895a55800cc5861",
+      "count": 2
+    },
+    {
+      "rule": "UNUSED_LOCAL_VARIABLE",
+      "file": "rpn/benchmarks/crfn_maze_gui.py",
+      "snippet": "app = CRFNLiveMazeApp(root)",
+      "sig": "6117ff40fd156b30",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_STATUS_IN_LOG",
+      "file": "rpn/benchmarks/crfn_multi_maze_generalization_benchmark.py",
+      "snippet": "f\"{ep_count:<8} | {maze.name:<24} | {step_count:<6} | True   | 0           | {len(substrate.somas):<8}\"",
+      "sig": "f86e6df22a565cf1",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_LOCAL_VARIABLE",
+      "file": "rpn/benchmarks/generate_live_maze_telemetry.py",
+      "snippet": "is_wp = False",
+      "sig": "c1971a5a2c965391",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/hpr_wave_interference.py",
+      "snippet": "print(f\"{'':<32} {'':<22} {'LIF:  52.5%':<16}\")",
+      "sig": "cd5455b91e2b604c",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/hpr_wave_interference.py",
+      "snippet": "print(f\"{'':<32} {'':<22} {'MLP:  78.8%':<16}\")",
+      "sig": "f999171afcd3c218",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/hpr_wave_interference.py",
+      "snippet": "print(f\"{'':<32} {'':<22} {'None: 0.6157':<16}\")",
+      "sig": "73fce013f492a7f7",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/hpr_wave_interference.py",
+      "snippet": "print(f\"{'':<32} {'':<22} {'Perc: 51.2%':<16}\")",
+      "sig": "01700485547aa76b",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/hpr_wave_interference.py",
+      "snippet": "print(f\"{'':<32} {'':<22} {'RCPN: 0.0303':<16}\")",
+      "sig": "2be7be4ea0f76642",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/hpr_wave_interference.py",
+      "snippet": "print(f\"{'Autonomous XOR Accuracy':<32} {xor_results['mean_accuracy'] * 100:>5.1f}% +/- {xor_results['std_accuracy'] * 100:>4.1f}%     {'RCPN: 98.8%':<16} {'PAS",
+      "sig": "69c136ee412ad308",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/hpr_wave_interference.py",
+      "snippet": "print(f\"{'Continuous Delay MSE (tau=20)':<32} {timing_results['hpr_spectral_mse']:>10.6f}             {'TDL:  0.0212':<16} {'PASS' if timing_pass else 'FAIL'}\")",
+      "sig": "c29bda90fe2952e9",
+      "count": 1
+    },
+    {
+      "rule": "BASELINE_RELATIVE_MARGIN",
+      "file": "rpn/benchmarks/rcc_laminar_generalization.py",
+      "snippet": "ret_pass = rcc_retention >= 0.95 and (rcc_retention - single_retention) >= 0.40",
+      "sig": "629c759b8b3143a8",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/rcc_laminar_generalization.py",
+      "snippet": "cap_pass = rcc_acc >= 0.95 and single_acc <= 0.60",
+      "sig": "91eed1124a6aada2",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/sequence_multihop.py",
+      "snippet": "h2.one_step_baseline <= cfg.max_one_step_on_hop2,",
+      "sig": "d1c190dabe817827",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/stage5_scorecard.py",
+      "snippet": "and single_acc <= cfg.max_scale_single",
+      "sig": "bb2fdf46ababd3cb",
+      "count": 1
+    },
+    {
+      "rule": "PASS_REQUIRES_BASELINE_FAILURE",
+      "file": "rpn/benchmarks/stage5_scorecard.py",
+      "snippet": "and single_early <= cfg.max_ruler_single",
+      "sig": "857b24c9c8b8da92",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/stress_upgraded_architecture.py",
+      "snippet": "print(f\"  Empirical Speedup:                 {speedup:.1f}x (200 ops vs 10,000 ops = 50x theoretical)\")",
+      "sig": "adbf4aba4193840d",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/stress_upgraded_architecture.py",
+      "snippet": "print(f\"  Noise Robustness Sweep:        noise=0.0: {noise_results['0.0']*100:.1f}%, noise=1.0: {noise_results['1.0']*100:.1f}%, noise=2.0: {noise_results['2.0'",
+      "sig": "e7af0924121a0526",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/stress_upgraded_architecture.py",
+      "snippet": "print(f\"  Noticeable Reality:          Single-tone online tracking MSE was 0.000018;\")",
+      "sig": "39cc9828e4f79c11",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/stress_upgraded_architecture.py",
+      "snippet": "print(f\"{'Grid 200% Noise Query':<34} {grid_res['noise_sweep']['2.0']*100:>5.1f}%                   Sub-rank SNR floor\")",
+      "sig": "c4807b2cd9bd88b6",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_RESULT_STRING",
+      "file": "rpn/benchmarks/stress_upgraded_architecture.py",
+      "snippet": "print(f\"{'Log-Cochlear Online Single-Tone':<34} {cochlear_res['2.0']['log_cochlear_mse']:>8.6f} MSE             Online LMS Tracking\")",
+      "sig": "25c47cbaed76c8e0",
+      "count": 1
+    },
+    {
+      "rule": "LITERAL_STATUS_IN_LOG",
+      "file": "rpn/benchmarks/stress_upgraded_architecture.py",
+      "snippet": "print(f\"                               True frozen broadband out-of-distribution MSE is {frozen_broadband_mse:.4f}.\")",
+      "sig": "a99130e56b734a53",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/core/hierarchical_cleanup.py",
+      "snippet": "self.n_clusters = n_clusters",
+      "sig": "794027cb25a96913",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/core/hierarchical_cleanup.py",
+      "snippet": "self.total_capacity = n_clusters * items_per_cluster",
+      "sig": "768b30b1e94d7e73",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/core/laminar_column.py",
+      "snippet": "self.l23_error_state = np.zeros(D, dtype=np.complex64)",
+      "sig": "900a4514cb0f878d",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/core/laminar_column.py",
+      "snippet": "self.l6_precision = 1.0",
+      "sig": "22e90ac198454564",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/core/laminar_column.py",
+      "snippet": "self.l6_precision = 1.0 / (1.0 + surprise)",
+      "sig": "85463fd3bad08fcd",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/core/rcpn.py",
+      "snippet": "self.lateral_inhibition = 0.0",
+      "sig": "1450d8de34bc67d5",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/crfn/crfn_morphogenetic.py",
+      "snippet": "self.last_rpe = 0.0",
+      "sig": "5bfc91ade4dc0b97",
+      "count": 2
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/crfn/crfn_morphogenetic.py",
+      "snippet": "self.last_rpe = rpe",
+      "sig": "951b464dc1c90d57",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/crfn/crfn_morphogenetic.py",
+      "snippet": "self.last_wave = err_wave",
+      "sig": "bb742e263dc7d57e",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/crfn/crfn_morphogenetic.py",
+      "snippet": "self.last_wave: complex = 0.0 + 0.0j",
+      "sig": "ea63169a9e9b04ce",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_LOCAL_VARIABLE",
+      "file": "rpn/neuron_v2/crfn/crfn_rl_predictive.py",
+      "snippet": "c_norm = self.eligibility.trace / (c_mag + 1e-4)",
+      "sig": "1e651f0c15d72645",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/crfn/crfn_rl_predictive.py",
+      "snippet": "self.dst = int(target_id)",
+      "sig": "1efd24e43664406a",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/crfn/crfn_rl_predictive.py",
+      "snippet": "self.last_rpe = 0.0",
+      "sig": "63be855ab08b487e",
+      "count": 2
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/crfn/crfn_rl_predictive.py",
+      "snippet": "self.last_rpe = rpe",
+      "sig": "25edb22c6ae32424",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_STATE_NEVER_READ",
+      "file": "rpn/neuron_v2/crfn/crfn_self_organizing.py",
+      "snippet": "self.dst = int(target_id)",
+      "sig": "dc201931bf883b5d",
+      "count": 1
+    },
+    {
+      "rule": "UNUSED_LOCAL_VARIABLE",
+      "file": "rpn/tests/test_continual_benchmark.py",
+      "snippet": "verdict = evaluate_verdict(results)",
+      "sig": "be59f7e10c435a14",
+      "count": 1
+    },
+    {
+      "rule": "LABEL_CONDITIONED_STIMULUS",
+      "file": "rpn/tests/test_crfn.py",
+      "snippet": "phase1 = np.pi if pat == (1, 1) else 0.0",
+      "sig": "a92ea1a8450ec57a",
+      "count": 1
+    }
+  ]
+}

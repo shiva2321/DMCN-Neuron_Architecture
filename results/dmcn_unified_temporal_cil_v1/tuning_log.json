@@ -1,0 +1,143 @@
+{
+  "tuning_entries": [
+    {
+      "run_index": 1,
+      "seed": 999,
+      "elapsed_sec": 18.423717099998612,
+      "metrics": {
+        "seed": 999,
+        "dmcn_unified_acc": 71.79999947547913,
+        "dmcn_unified_p0_retention": 89.88179564476013,
+        "dmcn_unified_p0_bwt": -9.219861030578613,
+        "dmcn_block_diag_4x_acc": 66.25999808311462,
+        "ablate_homeostasis_acc": 25.859999656677246,
+        "ablate_spine_traces_acc": 18.76000016927719,
+        "ablate_precision_acc": 11.03999987244606,
+        "static_acil_ranpac_acc": 10.899999737739563,
+        "pooled_acil_ranpac_acc": 25.220000743865967,
+        "gru_adam_acc": 10.659999400377274,
+        "gru_ewc_acc": 10.619999468326569,
+        "gru_er200_acc": 19.609999656677246,
+        "untrained_acc": 9.799999743700027,
+        "blind_acc": 10.279999673366547,
+        "shuffled_labels_acc": 9.89999994635582,
+        "majority_acc": 11.349999904632568
+      }
+    },
+    {
+      "run_index": 2,
+      "seed": 999,
+      "elapsed_sec": 17.980397899998934,
+      "metrics": {
+        "seed": 999,
+        "dmcn_unified_acc": 71.63999676704407,
+        "dmcn_unified_p0_retention": 91.25295281410217,
+        "dmcn_unified_p0_bwt": -7.801419496536255,
+        "dmcn_block_diag_4x_acc": 66.47999882698059,
+        "ablate_homeostasis_acc": 26.559999585151672,
+        "ablate_spine_traces_acc": 20.05999982357025,
+        "ablate_precision_acc": 10.089999437332153,
+        "static_acil_ranpac_acc": 11.189999431371689,
+        "pooled_acil_ranpac_acc": 25.81000030040741,
+        "gru_adam_acc": 10.659999400377274,
+        "gru_ewc_acc": 10.619999468326569,
+        "gru_er200_acc": 19.609999656677246,
+        "untrained_acc": 9.799999743700027,
+        "blind_acc": 10.279999673366547,
+        "shuffled_labels_acc": 9.549999982118607,
+        "majority_acc": 11.349999904632568
+      }
+    },
+    {
+      "run_index": 3,
+      "seed": 999,
+      "elapsed_sec": 18.47116339999775,
+      "metrics": {
+        "seed": 999,
+        "dmcn_unified_acc": 87.62999773025513,
+        "dmcn_unified_p0_retention": 97.2104012966156,
+        "dmcn_unified_p0_bwt": -2.695035934448242,
+        "dmcn_block_diag_4x_acc": 85.98999977111816,
+        "ablate_homeostasis_acc": 40.34000039100647,
+        "ablate_spine_traces_acc": 20.05999982357025,
+        "ablate_precision_acc": 10.089999437332153,
+        "static_acil_ranpac_acc": 11.189999431371689,
+        "pooled_acil_ranpac_acc": 25.81000030040741,
+        "gru_adam_acc": 10.659999400377274,
+        "gru_ewc_acc": 10.619999468326569,
+        "gru_er200_acc": 19.609999656677246,
+        "untrained_acc": 9.799999743700027,
+        "blind_acc": 10.279999673366547,
+        "shuffled_labels_acc": 9.189999848604202,
+        "majority_acc": 11.349999904632568
+      }
+    },
+    {
+      "run_index": 4,
+      "seed": 999,
+      "elapsed_sec": 18.797262100000808,
+      "metrics": {
+        "seed": 999,
+        "dmcn_unified_acc": 90.23000001907349,
+        "dmcn_unified_p0_retention": 97.82505631446838,
+        "dmcn_unified_p0_bwt": -2.080380916595459,
+        "dmcn_block_diag_4x_acc": 87.3799979686737,
+        "ablate_homeostasis_acc": 39.53000009059906,
+        "ablate_spine_traces_acc": 19.73000019788742,
+        "ablate_precision_acc": 10.089999437332153,
+        "static_acil_ranpac_acc": 10.920000076293945,
+        "pooled_acil_ranpac_acc": 25.099998712539673,
+        "gru_adam_acc": 10.659999400377274,
+        "gru_ewc_acc": 10.619999468326569,
+        "gru_er200_acc": 19.609999656677246,
+        "untrained_acc": 9.799999743700027,
+        "blind_acc": 8.919999748468399,
+        "shuffled_labels_acc": 9.519999474287033,
+        "majority_acc": 11.349999904632568
+      }
+    }
+  ],
+  "_meta": {
+    "exp_id": "dmcn_unified_temporal_cil_v1_val",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_seed_999",
+      "d_exp": 2048,
+      "ridge": 10.0,
+      "n_delay": 4,
+      "pair_gains": [
+        1.0,
+        6.0,
+        0.2,
+        10.0,
+        0.4
+      ]
+    },
+    "command": "rpn/benchmarks/dmcn_unified_temporal_cil_benchmark.py --mode val",
+    "timestamp_utc": "2026-11-24T18:39:02+00:00",
+    "python": "3.12.10"
+  }
+}

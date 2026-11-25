@@ -1,0 +1,115 @@
+{
+  "verdict": "CONFIRMED",
+  "intact_array": {
+    "mean_delta_T": 0.8228019227024493,
+    "std_delta_T": 0.00878601732356692,
+    "ci95_delta_T": 0.003850641869449334,
+    "min_delta_T": 0.800786902466677,
+    "max_delta_T": 0.8378953879731366,
+    "per_seed_delta_T": [
+      0.8179107942763744,
+      0.821608063322969,
+      0.8267870729076261,
+      0.8258981020282511,
+      0.8185010202205769,
+      0.8280871434221819,
+      0.800786902466677,
+      0.82126257518807,
+      0.8293505715415312,
+      0.833238260531391,
+      0.8208543168166279,
+      0.8166057178992114,
+      0.8378953879731366,
+      0.8163293916343908,
+      0.812156886028932,
+      0.8305129220726901,
+      0.8116311371864422,
+      0.8291796362137334,
+      0.8353392020000923,
+      0.82210335031808
+    ],
+    "mean_t_signal": 0.999672469834936,
+    "mean_t_noise": 0.17687054713248676,
+    "mean_distance_to_match": 0.03629496847849612,
+    "mean_snr_init": 1.543842196563214,
+    "mean_snr_final": 1.943451069147968
+  },
+  "null_control_decoupled": {
+    "mean_delta_T": 0.0036102987817777875,
+    "std_delta_T": 0.007418832678960574,
+    "min_delta_T": -0.01293055315243613,
+    "max_delta_T": 0.01558651815733697
+  },
+  "null_control_shuffled": {
+    "mean_delta_T": 0.0036102987817777875,
+    "std_delta_T": 0.007418832678960574,
+    "min_delta_T": -0.01293055315243613,
+    "max_delta_T": 0.01558651815733697
+  },
+  "baseline_untrained": {
+    "mean_delta_T": -0.004052865671978917,
+    "std_delta_T": 0.033165658686413274,
+    "min_delta_T": -0.06967650681859283,
+    "max_delta_T": 0.05021104233998397
+  },
+  "baseline_oja": {
+    "mean_delta_w": 0.4585246032628535,
+    "std_delta_w": 0.014021689383937675,
+    "mean_snr_final": 2.1125828878918798
+  },
+  "falsifier_tripped": false,
+  "falsifier_reasons": [],
+  "_meta": {
+    "exp_id": "track3_impedance_plasticity",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319
+    ],
+    "config": {
+      "n_synapses": 8,
+      "n_signal_channels": 4,
+      "n_noise_channels": 4,
+      "lr": 0.08,
+      "coherence_threshold": 0.4,
+      "n_episodes": 50,
+      "z0_membrane": [
+        1.0,
+        -0.5
+      ],
+      "z_match_target": [
+        1.0,
+        0.5
+      ],
+      "z_shunt_target": [
+        0.02,
+        0.0
+      ]
+    },
+    "command": "python rpn/benchmarks/track3_impedance_benchmark.py",
+    "timestamp_utc": "2026-10-16T16:24:13+00:00",
+    "python": "3.12.10",
+    "tuning_seeds": [
+      997
+    ]
+  }
+}

@@ -1,0 +1,3443 @@
+{
+  "verdict": "PASS (REPRODUCED & CONTROLLED)",
+  "intact_model": {
+    "mean_accuracy": 1.0,
+    "std_accuracy": 0.0,
+    "ci95": 0.0,
+    "min_accuracy": 1.0,
+    "max_accuracy": 1.0,
+    "per_seed_accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "detailed": [
+      {
+        "seed": 100,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0858565088063851,
+            "max_vs": -54.18909608300073,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 101,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0858449260173518,
+            "max_vs": -54.32208036883971,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 102,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.1410857359523965,
+            "max_vs": -54.13660913929642,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 103,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.1842627238801637,
+            "max_vs": -53.76694721317682,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 104,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.07681745426292791,
+            "max_vs": -54.1880402491235,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 105,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0953509671904292,
+            "max_vs": -53.86534398170289,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 106,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.10500426745107663,
+            "max_vs": -54.33998538020892,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 107,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.09262434366605814,
+            "max_vs": -54.40290210287818,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 108,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.08369053204692765,
+            "max_vs": -54.15905918893311,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 109,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.10329943744100428,
+            "max_vs": -54.00729634428643,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 110,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0834272198772375,
+            "max_vs": -54.20607861805135,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 111,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.11089227820930521,
+            "max_vs": -54.958744929907496,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 112,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.19713071722200692,
+            "max_vs": -53.18712477055423,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 113,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.14961549618964629,
+            "max_vs": -54.541246285325,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 114,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.10261784061746564,
+            "max_vs": -54.52752926366009,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 115,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.09123116976603814,
+            "max_vs": -54.243702107347204,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 116,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.08694400203276693,
+            "max_vs": -54.535322054933474,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 117,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.09582117883767012,
+            "max_vs": -54.46485447887237,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 118,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.06924098053624658,
+            "max_vs": -53.93947790253753,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      },
+      {
+        "seed": 119,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.1360796281418031,
+            "max_vs": -53.29012741881905,
+            "correct": true
+          }
+        ],
+        "accuracy": 1.0
+      }
+    ]
+  },
+  "null_control_kv_ablated": {
+    "mean_accuracy": 0.75,
+    "std_accuracy": 0.0,
+    "ci95": 0.0,
+    "min_accuracy": 0.75,
+    "max_accuracy": 0.75,
+    "per_seed_accuracies": [
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75
+    ],
+    "detailed": [
+      {
+        "seed": 100,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 101,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 102,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 103,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 104,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 105,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 106,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 107,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 108,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 109,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 110,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 111,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 112,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 113,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 114,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 115,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 116,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 117,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 118,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      },
+      {
+        "seed": 119,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 1,
+            "spikes": 1,
+            "k_factor": 1.0,
+            "max_vs": 20.0,
+            "correct": false
+          }
+        ],
+        "accuracy": 0.75
+      }
+    ]
+  },
+  "null_control_passive_dendrite": {
+    "mean_accuracy": 0.5,
+    "std_accuracy": 0.0,
+    "ci95": 0.0,
+    "min_accuracy": 0.5,
+    "max_accuracy": 0.5,
+    "per_seed_accuracies": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "detailed": [
+      {
+        "seed": 100,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.31086844306115,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.31086844306115,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.85272665501024,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 101,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.20885497026349,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.20885497026349,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.97064906434544,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 102,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.9437782909118,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.9437782909118,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -55.5226463504787,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 103,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.80029111655612,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.80029111655612,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -55.7408334636015,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 104,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.30725596772312,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.30725596772312,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.75350516166688,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 105,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.49510782390264,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.49510782390264,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.681309850317604,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 106,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.17241592984965,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.17241592984965,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -55.243194366482925,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 107,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.48548645309971,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.48548645309971,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -55.13872267564234,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 108,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.29148621025276,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.29148621025276,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.79980759362563,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 109,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.58366102041471,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.58366102041471,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.91211323294959,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 110,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.22124902256856,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.22124902256856,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.840393700543416,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 111,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.94970937265155,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.94970937265155,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -55.88701006922294,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 112,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.98431187138615,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.98431187138615,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -55.364590971707415,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 113,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -65.02783221461867,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -65.02783221461867,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -56.00584586382316,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 114,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.41101895725369,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.41101895725369,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -55.38135580170951,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 115,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.43520636535935,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.43520636535935,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.97255521179448,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 116,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.93186927150478,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.93186927150478,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -55.203759048750186,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 117,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.27308672321055,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.27308672321055,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -55.22628370937375,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 118,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.22107418137138,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.22107418137138,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.43645742906732,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      },
+      {
+        "seed": 119,
+        "trials": [
+          {
+            "input": [
+              0,
+              0
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -74.0,
+            "correct": true
+          },
+          {
+            "input": [
+              1,
+              0
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.19748136273486,
+            "correct": false
+          },
+          {
+            "input": [
+              0,
+              1
+            ],
+            "target": 1,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -64.19748136273486,
+            "correct": false
+          },
+          {
+            "input": [
+              1,
+              1
+            ],
+            "target": 0,
+            "prediction": 0,
+            "spikes": 0,
+            "k_factor": 0.0,
+            "max_vs": -54.66408602850108,
+            "correct": true
+          }
+        ],
+        "accuracy": 0.5
+      }
+    ]
+  },
+  "null_control_linear": {
+    "mean_accuracy": 0.75,
+    "std_accuracy": 0.0,
+    "ci95": 0.0,
+    "per_seed_accuracies": [
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75,
+      0.75
+    ]
+  },
+  "baseline_tanh_mlp": {
+    "mean_accuracy": 1.0,
+    "std_accuracy": 0.0,
+    "ci95": 0.0,
+    "per_seed_accuracies": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "falsifier_tripped": false,
+  "falsifier_reasons": [],
+  "_meta": {
+    "exp_id": "track1_dcaap_xor",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "config": {
+      "exp_id": "track1_dcaap_xor",
+      "n_seeds": 20,
+      "noise_level": 0.05,
+      "jitter_ms": 1.5,
+      "dt_ms": 0.05,
+      "duration_ms": 80.0,
+      "cd_nf": 0.05,
+      "gleak_d_us": 0.003,
+      "gc_us": 0.002,
+      "cs_nf": 0.1,
+      "gleak_s_us": 0.005,
+      "vth_soma_mv": -52.0,
+      "w_na": 5.0,
+      "i_th_na": 0.6,
+      "i_opt_na": 1.0,
+      "d_param": 0.35
+    },
+    "command": "python rpn/benchmarks/track1_dcaap_benchmark.py",
+    "timestamp_utc": "2026-10-16T15:52:24+00:00",
+    "python": "3.12.10",
+    "tuning_seeds": [
+      999
+    ]
+  }
+}

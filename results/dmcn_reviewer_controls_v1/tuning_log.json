@@ -1,0 +1,100 @@
+{
+  "tuning_entries": [
+    {
+      "run_index": 1,
+      "seed": 999,
+      "elapsed_sec": 144.25741329999983,
+      "metrics": {
+        "seed": 999,
+        "temp__dmcn_unified_acc": 90.18999934196472,
+        "temp__dmcn_unified_p0_ret": 97.68321514129639,
+        "temp__pooled_acil_causal_rms_acc": 68.50000023841858,
+        "temp__gru_causal_rms_adam_acc": 15.719999372959137,
+        "temp__gru_causal_rms_ewc_acc": 15.789999067783356,
+        "temp__gru_causal_rms_er200_acc": 18.609999120235443,
+        "temp__gru_causal_rms_er200_p0_ret": 2.364066243171692,
+        "temp__blind_acc": 8.919999748468399,
+        "temp__majority_acc": 11.349999904632568,
+        "c100__dmcn_acc": 66.49999618530273,
+        "c100__dmcn_t0_ret": 67.70000457763672,
+        "c100__dmcn_block4x_acc": 63.30999732017517,
+        "c100__joint_fp64_acc": 66.49999618530273,
+        "c100__abs_gap_fp64": 0.0,
+        "c100__acil_linear_rls_acc": 64.95000123977661,
+        "c100__mlp_er500_acc": 6.300000101327896,
+        "c100__mlp_er200_acc": 6.48999959230423,
+        "c100__mlp_ewc_acc": 1.9299998879432678,
+        "c100__mlp_adam_acc": 1.939999870955944,
+        "c100__untrained_acc": 0.9999999776482582,
+        "c100__blind_acc": 0.9999999776482582,
+        "c100__shuffled_acc": 1.0199999436736107,
+        "c100__majority_acc": 0.9999999776482582
+      }
+    },
+    {
+      "run_index": 2,
+      "seed": 999,
+      "elapsed_sec": 105.79913670000133,
+      "metrics": {
+        "seed": 999,
+        "temp__dmcn_unified_acc": 90.18999934196472,
+        "temp__dmcn_unified_p0_ret": 97.68321514129639,
+        "temp__pooled_acil_causal_rms_acc": 68.50000023841858,
+        "temp__gru_causal_rms_adam_acc": 15.719999372959137,
+        "temp__gru_causal_rms_ewc_acc": 15.789999067783356,
+        "temp__gru_causal_rms_er200_acc": 18.609999120235443,
+        "temp__gru_causal_rms_er200_p0_ret": 2.364066243171692,
+        "temp__blind_acc": 8.919999748468399,
+        "temp__majority_acc": 11.349999904632568,
+        "c100__dmcn_acc": 68.73999834060669,
+        "c100__dmcn_t0_ret": 70.50000429153442,
+        "c100__dmcn_block4x_acc": 67.04999804496765,
+        "c100__joint_fp64_acc": 68.75,
+        "c100__abs_gap_fp64": 0.010001659393310547,
+        "c100__acil_linear_rls_acc": 64.98000025749207,
+        "c100__mlp_er500_acc": 33.67999792098999,
+        "c100__mlp_er200_acc": 23.079998791217804,
+        "c100__mlp_ewc_acc": 9.25000011920929,
+        "c100__mlp_adam_acc": 9.290000051259995,
+        "c100__untrained_acc": 0.9999999776482582,
+        "c100__blind_acc": 0.9999999776482582,
+        "c100__shuffled_acc": 1.059999968856573,
+        "c100__majority_acc": 0.9999999776482582
+      }
+    }
+  ],
+  "_meta": {
+    "exp_id": "dmcn_reviewer_controls_v1_val",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_seed_999",
+      "device": "cuda"
+    },
+    "command": "rpn/benchmarks/dmcn_reviewer_controls_benchmark.py --mode val",
+    "timestamp_utc": "2026-11-25T08:57:25+00:00",
+    "python": "3.12.10"
+  }
+}

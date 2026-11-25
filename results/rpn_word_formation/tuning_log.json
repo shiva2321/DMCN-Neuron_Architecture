@@ -1,0 +1,79 @@
+{
+  "tuning_entries": [
+    {
+      "config_id": 1,
+      "lr": 0.3,
+      "conf_th": 0.3,
+      "desc": "Conservative learning rate (0.30)",
+      "seed": 999,
+      "val_wug_acc": 83.75,
+      "val_held_out_top1": 18.163265306122447,
+      "val_held_out_top3": 33.06122448979592,
+      "val_completion_validity": 27.551020408163264,
+      "val_illegal_refusal": 55.0,
+      "val_untrained_wug": 0.0,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 2,
+      "lr": 0.5,
+      "conf_th": 0.35,
+      "desc": "Standard calibrated delta learning rate (0.50)",
+      "seed": 999,
+      "val_wug_acc": 83.75,
+      "val_held_out_top1": 18.571428571428573,
+      "val_held_out_top3": 28.367346938775512,
+      "val_completion_validity": 33.673469387755105,
+      "val_illegal_refusal": 55.0,
+      "val_untrained_wug": 0.0,
+      "status": "SELECTED_FOR_FROZEN_EVALUATION"
+    },
+    {
+      "config_id": 3,
+      "lr": 0.8,
+      "conf_th": 0.4,
+      "desc": "Aggressive fast-weight learning rate (0.80)",
+      "seed": 999,
+      "val_wug_acc": 80.0,
+      "val_held_out_top1": 18.571428571428573,
+      "val_held_out_top3": 26.122448979591837,
+      "val_completion_validity": 32.6530612244898,
+      "val_illegal_refusal": 65.0,
+      "val_untrained_wug": 0.0,
+      "status": "EXPLORATION"
+    }
+  ],
+  "_meta": {
+    "exp_id": "rpn_word_formation_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_tuning"
+    },
+    "command": "python rpn/benchmarks/rpn_word_formation_benchmark.py tune",
+    "timestamp_utc": "2026-10-25T01:26:00+00:00",
+    "python": "3.12.10"
+  }
+}

@@ -1,0 +1,17 @@
+# Grandfathered results files without run metadata. May only shrink.
+experiment_results.json
+rpn/benchmarks/crfn_maze_demonstration_results.json
+rpn/benchmarks/crfn_maze_results.json
+rpn/benchmarks/crfn_multi_maze_results.json
+rpn/crfn_learning_benchmark_results.json
+rpn/crfn_shootout_results.json
+rpn/dual_track_shootout_results.json
+rpn/hpr_benchmark_results.json
+rpn/rcc_laminar_results.json
+rpn/rcpn_timing_results.json
+rpn/rcpn_xor_results.json
+rpn/stress_bandwidth_results.json
+rpn/stress_capacity_results.json
+rpn/stress_frozen_timing_results.json
+rpn/stress_scaling_results.json
+rpn/stress_upgraded_results.json

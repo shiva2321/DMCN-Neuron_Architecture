@@ -1,0 +1,65 @@
+{
+  "tuning_entries": [
+    {
+      "val_seed": 991,
+      "config": {
+        "eta": 0.01,
+        "sigma_mod": 0.5
+      },
+      "nmse_post_intact": 0.20853651351144373,
+      "status": "PASS"
+    },
+    {
+      "val_seed": 991,
+      "config": {
+        "eta": 0.03,
+        "sigma_mod": 0.5
+      },
+      "nmse_post_intact": 0.20853651351144373,
+      "status": "PASS"
+    },
+    {
+      "val_seed": 991,
+      "config": {
+        "eta": 0.05,
+        "sigma_mod": 0.5
+      },
+      "nmse_post_intact": 0.20853651351144373,
+      "status": "PASS"
+    }
+  ],
+  "_meta": {
+    "exp_id": "capn_m4_three_factor_plasticity_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      991,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "config": {
+      "validation_seed": 991,
+      "n_configs": 3
+    },
+    "command": "python rpn/benchmarks/capn_m4_plasticity_benchmark.py tune",
+    "timestamp_utc": "2026-10-16T17:42:53+00:00",
+    "python": "3.12.10"
+  }
+}

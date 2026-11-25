@@ -1,0 +1,85 @@
+{
+  "tuning_entries": [
+    {
+      "config_id": 1,
+      "seed": 995,
+      "alpha_l5": 0.4,
+      "noise_sigma": 0.5,
+      "description": "Lower L5 prior weight (alpha=0.40)",
+      "val_acc_net": 100.0,
+      "val_cos_sim": 0.942803255458914,
+      "val_acc_decoupled": 0.0,
+      "val_acc_monolith": 0.0,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 2,
+      "seed": 995,
+      "alpha_l5": 0.6,
+      "noise_sigma": 0.5,
+      "description": "Calibrated balanced prior (alpha=0.60)",
+      "val_acc_net": 100.0,
+      "val_cos_sim": 0.942803255458914,
+      "val_acc_decoupled": 0.0,
+      "val_acc_monolith": 0.0,
+      "status": "SELECTED_FOR_FROZEN_EVALUATION"
+    },
+    {
+      "config_id": 3,
+      "seed": 995,
+      "alpha_l5": 0.8,
+      "noise_sigma": 0.5,
+      "description": "Higher L5 prior weight (alpha=0.80)",
+      "val_acc_net": 100.0,
+      "val_cos_sim": 0.942803255458914,
+      "val_acc_decoupled": 0.0,
+      "val_acc_monolith": 0.0,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 4,
+      "seed": 995,
+      "alpha_l5": 0.6,
+      "noise_sigma": 0.7,
+      "description": "Stress noise test (sigma=0.70)",
+      "val_acc_net": 100.0,
+      "val_cos_sim": 0.9105051876429412,
+      "val_acc_decoupled": 0.0,
+      "val_acc_monolith": 0.0,
+      "status": "EXPLORATION"
+    }
+  ],
+  "_meta": {
+    "exp_id": "track5_compositional_generalization_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "config": {
+      "purpose": "validation_tuning"
+    },
+    "command": "tuning",
+    "timestamp_utc": "2026-10-16T16:45:45+00:00",
+    "python": "3.12.10"
+  }
+}

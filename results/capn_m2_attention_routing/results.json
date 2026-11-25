@@ -1,0 +1,254 @@
+{
+  "headline_metric": "crosstalk_suppression_ratio_db",
+  "direction": "higher_is_better",
+  "n_seeds": 20,
+  "summary": {
+    "intact_crosstalk_suppression_db": {
+      "mean": 194.76762495869158,
+      "std": 1.0612209162210213,
+      "ci_95": 0.46510057313170333,
+      "min": 191.95027598838726,
+      "max": 196.7033119089445
+    },
+    "intact_switching_latency_ms": {
+      "mean": 4.25,
+      "std": 1.4095538674570611,
+      "ci_95": 0.6177642200540165,
+      "min": 3.0,
+      "max": 7.5
+    },
+    "decoupled_control_crosstalk_db": {
+      "mean": 179.5948233521482,
+      "std": 4.885530082181997,
+      "ci_95": 2.1411779644962996,
+      "min": 172.70583293273,
+      "max": 188.75637455215787
+    },
+    "unshunted_control_crosstalk_db": {
+      "mean": 6.563782559648568,
+      "std": 0.8667671948348421,
+      "ci_95": 0.3798774721902322,
+      "min": 4.451269771438767,
+      "max": 7.874480449679326
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 620,
+      "cr_intact": 194.84200291264747,
+      "lat_intact": 3.0,
+      "cr_decoupled": 176.5613962068236,
+      "lat_decoupled": 17.5,
+      "cr_unshunted": 6.563928477857067,
+      "lat_unshunted": 5.5
+    },
+    {
+      "seed": 621,
+      "cr_intact": 196.7033119089445,
+      "lat_intact": 3.0,
+      "cr_decoupled": 173.16494682860622,
+      "lat_decoupled": 0.0,
+      "cr_unshunted": 5.589284926727833,
+      "lat_unshunted": 7.5
+    },
+    {
+      "seed": 622,
+      "cr_intact": 195.35442470936528,
+      "lat_intact": 3.0,
+      "cr_decoupled": 179.61335748684712,
+      "lat_decoupled": 3.0,
+      "cr_unshunted": 6.832775194561892,
+      "lat_unshunted": 4.5
+    },
+    {
+      "seed": 623,
+      "cr_intact": 196.20825873347368,
+      "lat_intact": 5.5,
+      "cr_decoupled": 183.4884556994881,
+      "lat_decoupled": 4.5,
+      "cr_unshunted": 7.17790760890388,
+      "lat_unshunted": 2.5
+    },
+    {
+      "seed": 624,
+      "cr_intact": 193.72948331665427,
+      "lat_intact": 3.0,
+      "cr_decoupled": 179.79243601077903,
+      "lat_decoupled": 3.0,
+      "cr_unshunted": 7.53880429794715,
+      "lat_unshunted": 0.0
+    },
+    {
+      "seed": 625,
+      "cr_intact": 194.37566439537392,
+      "lat_intact": 7.0,
+      "cr_decoupled": 176.82801645226294,
+      "lat_decoupled": 2.5,
+      "cr_unshunted": 7.40163834662512,
+      "lat_unshunted": 1.5
+    },
+    {
+      "seed": 626,
+      "cr_intact": 191.95027598838726,
+      "lat_intact": 5.5,
+      "cr_decoupled": 182.91649736638425,
+      "lat_decoupled": 5.5,
+      "cr_unshunted": 5.450934491489342,
+      "lat_unshunted": 7.5
+    },
+    {
+      "seed": 627,
+      "cr_intact": 193.41849385530065,
+      "lat_intact": 3.0,
+      "cr_decoupled": 179.45538609821574,
+      "lat_decoupled": 6.5,
+      "cr_unshunted": 7.268442758103431,
+      "lat_unshunted": 2.5
+    },
+    {
+      "seed": 628,
+      "cr_intact": 194.40295213318768,
+      "lat_intact": 4.5,
+      "cr_decoupled": 179.93342876104379,
+      "lat_decoupled": 5.0,
+      "cr_unshunted": 6.234703321520062,
+      "lat_unshunted": 6.5
+    },
+    {
+      "seed": 629,
+      "cr_intact": 194.86794994765384,
+      "lat_intact": 5.0,
+      "cr_decoupled": 188.12032090266885,
+      "lat_decoupled": 4.0,
+      "cr_unshunted": 7.874480449679326,
+      "lat_unshunted": 0.0
+    },
+    {
+      "seed": 630,
+      "cr_intact": 195.4418812554922,
+      "lat_intact": 6.0,
+      "cr_decoupled": 176.7806189851205,
+      "lat_decoupled": 13.0,
+      "cr_unshunted": 6.419775644161443,
+      "lat_unshunted": 5.5
+    },
+    {
+      "seed": 631,
+      "cr_intact": 194.7998961359245,
+      "lat_intact": 3.5,
+      "cr_decoupled": 188.75637455215787,
+      "lat_decoupled": 3.5,
+      "cr_unshunted": 7.279220110956294,
+      "lat_unshunted": 5.0
+    },
+    {
+      "seed": 632,
+      "cr_intact": 194.58474618097648,
+      "lat_intact": 4.0,
+      "cr_decoupled": 172.70583293273,
+      "lat_decoupled": 2.0,
+      "cr_unshunted": 6.187840524393774,
+      "lat_unshunted": 6.0
+    },
+    {
+      "seed": 633,
+      "cr_intact": 194.43892799057465,
+      "lat_intact": 7.5,
+      "cr_decoupled": 182.20322795960507,
+      "lat_decoupled": 4.5,
+      "cr_unshunted": 6.9645566486383705,
+      "lat_unshunted": 4.0
+    },
+    {
+      "seed": 634,
+      "cr_intact": 195.16978638803502,
+      "lat_intact": 3.0,
+      "cr_decoupled": 172.9274783928403,
+      "lat_decoupled": 1.0,
+      "cr_unshunted": 6.105625074093018,
+      "lat_unshunted": 6.5
+    },
+    {
+      "seed": 635,
+      "cr_intact": 196.0929891499523,
+      "lat_intact": 4.5,
+      "cr_decoupled": 187.40184048291553,
+      "lat_decoupled": 11.5,
+      "cr_unshunted": 5.37485355464569,
+      "lat_unshunted": 8.5
+    },
+    {
+      "seed": 636,
+      "cr_intact": 194.86231351306878,
+      "lat_intact": 3.5,
+      "cr_decoupled": 179.76614441568574,
+      "lat_decoupled": 7.0,
+      "cr_unshunted": 4.451269771438767,
+      "lat_unshunted": 9.5
+    },
+    {
+      "seed": 637,
+      "cr_intact": 195.21864215887868,
+      "lat_intact": 3.0,
+      "cr_decoupled": 181.27779637245183,
+      "lat_decoupled": 4.0,
+      "cr_unshunted": 7.191115881660981,
+      "lat_unshunted": 0.0
+    },
+    {
+      "seed": 638,
+      "cr_intact": 193.68443039376893,
+      "lat_intact": 3.5,
+      "cr_decoupled": 175.96365734408178,
+      "lat_decoupled": 3.0,
+      "cr_unshunted": 6.285424578918069,
+      "lat_unshunted": 6.5
+    },
+    {
+      "seed": 639,
+      "cr_intact": 195.20606810617176,
+      "lat_intact": 4.0,
+      "cr_decoupled": 174.2392537922556,
+      "lat_decoupled": 0.0,
+      "cr_unshunted": 7.0830695306498725,
+      "lat_unshunted": 5.0
+    }
+  ],
+  "_meta": {
+    "exp_id": "capn_m2_attention_routing",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      620,
+      621,
+      622,
+      623,
+      624,
+      625,
+      626,
+      627,
+      628,
+      629,
+      630,
+      631,
+      632,
+      633,
+      634,
+      635,
+      636,
+      637,
+      638,
+      639
+    ],
+    "config": {
+      "dim": 64,
+      "omega_1": 0.25,
+      "omega_2": 0.08,
+      "coupling_kappa": 0.65,
+      "tau_context": 5.0
+    },
+    "command": "python rpn/benchmarks/capn_m2_attention_benchmark.py",
+    "timestamp_utc": "2026-10-16T17:25:49+00:00",
+    "python": "3.12.10"
+  }
+}

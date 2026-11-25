@@ -1,0 +1,70 @@
+{
+  "tuning_entries": [
+    {
+      "config_id": 1,
+      "seed": 993,
+      "coupling_kappa": 0.4,
+      "description": "Conservative phase coupling (kappa=0.40)",
+      "val_cr_intact": 190.69137325526083,
+      "val_lat_intact": 3.0,
+      "val_cr_decoupled": 171.6223073860067,
+      "val_cr_unshunted": 4.805727906828049,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 2,
+      "seed": 993,
+      "coupling_kappa": 0.65,
+      "description": "Calibrated phase coupling (kappa=0.65)",
+      "val_cr_intact": 190.69137325526083,
+      "val_lat_intact": 3.0,
+      "val_cr_decoupled": 171.6223073860067,
+      "val_cr_unshunted": 4.805727906828049,
+      "status": "SELECTED_FOR_FROZEN_EVALUATION"
+    },
+    {
+      "config_id": 3,
+      "seed": 993,
+      "coupling_kappa": 0.9,
+      "description": "Aggressive phase coupling (kappa=0.90)",
+      "val_cr_intact": 190.69137325526083,
+      "val_lat_intact": 3.0,
+      "val_cr_decoupled": 171.6223073860067,
+      "val_cr_unshunted": 4.805727906828049,
+      "status": "EXPLORATION"
+    }
+  ],
+  "_meta": {
+    "exp_id": "capn_m2_attention_routing_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "config": {
+      "purpose": "validation_tuning"
+    },
+    "command": "tuning",
+    "timestamp_utc": "2026-10-16T17:25:48+00:00",
+    "python": "3.12.10"
+  }
+}

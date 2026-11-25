@@ -1,0 +1,77 @@
+{
+  "tuning_entries": [
+    {
+      "config_id": 1,
+      "seed": 997,
+      "lr": 0.04,
+      "coherence_threshold": 0.35,
+      "description": "Conservative learning rate (lr=0.04, thresh=0.35)",
+      "val_delta_T": 0.3395484542975016,
+      "val_dist_match": 0.2470816410535721,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 2,
+      "seed": 997,
+      "lr": 0.08,
+      "coherence_threshold": 0.4,
+      "description": "Calibrated learning rate (lr=0.08, thresh=0.40)",
+      "val_delta_T": 0.8255523205488118,
+      "val_dist_match": 0.029421864595213596,
+      "status": "SELECTED_FOR_FROZEN_EVALUATION"
+    },
+    {
+      "config_id": 3,
+      "seed": 997,
+      "lr": 0.12,
+      "coherence_threshold": 0.45,
+      "description": "Aggressive learning rate (lr=0.12, thresh=0.45)",
+      "val_delta_T": 0.9249909784522083,
+      "val_dist_match": 0.003187222867306387,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 4,
+      "seed": 997,
+      "lr": 0.05,
+      "coherence_threshold": 0.5,
+      "description": "High selectivity threshold (lr=0.05, thresh=0.50)",
+      "val_delta_T": 0.509889040026703,
+      "val_dist_match": 0.1463723648804671,
+      "status": "EXPLORATION"
+    }
+  ],
+  "_meta": {
+    "exp_id": "track3_impedance_plasticity_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "config": {
+      "purpose": "validation_tuning"
+    },
+    "command": "tuning",
+    "timestamp_utc": "2026-10-16T16:23:25+00:00",
+    "python": "3.12.10"
+  }
+}

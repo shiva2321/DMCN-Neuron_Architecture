@@ -1,0 +1,66 @@
+{
+  "tuning_entries": [
+    {
+      "run_index": 1,
+      "seed": 999,
+      "elapsed_sec": 8.045812600001227,
+      "metrics": {
+        "seed": 999,
+        "dmcn_cil_final_acc": 95.72999477386475,
+        "dmcn_cil_p0_retention": 98.81796836853027,
+        "dmcn_cil_p0_bwt": -1.1347472667694092,
+        "joint_offline_fp64_upper_bound_acc": 95.72999477386475,
+        "abs_gap_vs_joint_fp64": 0.0,
+        "raw_linear_rls_acc": 86.08999848365784,
+        "ablate_precision_acc": 18.779999017715454,
+        "mlp_sgd_cil_acc": 19.249999523162842,
+        "mlp_sgd_p0_retention": 0.0,
+        "mlp_sgd_p0_bwt": -99.81087446212769,
+        "mlp_adam_cil_acc": 19.23999935388565,
+        "mlp_adam_p0_retention": 0.0,
+        "mlp_adam_p0_bwt": -99.95271563529968,
+        "untrained_acc": 9.799999743700027,
+        "blind_acc": 9.799999743700027,
+        "shuffled_labels_acc": 11.099999397993088,
+        "majority_acc": 11.349999904632568
+      }
+    }
+  ],
+  "_meta": {
+    "exp_id": "dmcn_split_mnist_cuda_v1_val",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_seed_999",
+      "d_exp": 2048,
+      "ridge": 10.0,
+      "exp_scale": 2.2,
+      "batch_size": 256
+    },
+    "command": "rpn/benchmarks/dmcn_split_mnist_cuda_benchmark.py --mode val",
+    "timestamp_utc": "2026-11-24T18:08:10+00:00",
+    "python": "3.12.10"
+  }
+}

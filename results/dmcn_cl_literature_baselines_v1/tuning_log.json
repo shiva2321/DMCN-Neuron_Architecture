@@ -1,0 +1,77 @@
+{
+  "tuning_entries": [
+    {
+      "run_index": 1,
+      "seed": 999,
+      "elapsed_sec": 22.478535700000066,
+      "metrics": {
+        "seed": 999,
+        "mnist__dmcn_acc": 95.72999477386475,
+        "mnist__dmcn_p0_ret": 98.81796836853027,
+        "mnist__dmcn_p0_bwt": -1.1347472667694092,
+        "mnist__dmcn_block4x_acc": 92.89999604225159,
+        "mnist__joint_fp64_acc": 95.72999477386475,
+        "mnist__abs_gap_fp64": 0.0,
+        "mnist__acil_linear_rls_acc": 86.08999848365784,
+        "mnist__mlp_ewc_acc": 19.200000166893005,
+        "mnist__mlp_er200_acc": 66.60000085830688,
+        "mnist__mlp_er500_acc": 71.5999960899353,
+        "mnist__mlp_adam_acc": 19.200000166893005,
+        "mnist__untrained_acc": 9.799999743700027,
+        "mnist__blind_acc": 9.799999743700027,
+        "mnist__shuffled_acc": 10.539999604225159,
+        "mnist__majority_acc": 11.349999904632568,
+        "fmnist__dmcn_acc": 86.40999794006348,
+        "fmnist__dmcn_p0_ret": 89.3500030040741,
+        "fmnist__dmcn_p0_bwt": -9.549999237060547,
+        "fmnist__dmcn_block4x_acc": 83.69999527931213,
+        "fmnist__joint_fp64_acc": 86.40999794006348,
+        "fmnist__abs_gap_fp64": 0.0,
+        "fmnist__acil_linear_rls_acc": 81.1199963092804,
+        "fmnist__mlp_ewc_acc": 19.929999113082886,
+        "fmnist__mlp_er200_acc": 67.82000064849854,
+        "fmnist__mlp_er500_acc": 66.60999655723572,
+        "fmnist__mlp_adam_acc": 19.929999113082886,
+        "fmnist__untrained_acc": 9.999999403953552,
+        "fmnist__blind_acc": 9.999999403953552,
+        "fmnist__shuffled_acc": 9.219999611377716,
+        "fmnist__majority_acc": 9.999999403953552
+      }
+    }
+  ],
+  "_meta": {
+    "exp_id": "dmcn_cl_literature_baselines_v1_val",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_seed_999",
+      "d_exp": 2048,
+      "ridge": 10.0
+    },
+    "command": "rpn/benchmarks/dmcn_cl_literature_baselines_benchmark.py --mode val",
+    "timestamp_utc": "2026-11-24T18:47:10+00:00",
+    "python": "3.12.10"
+  }
+}

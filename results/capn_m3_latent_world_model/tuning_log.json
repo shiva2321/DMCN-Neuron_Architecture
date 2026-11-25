@@ -1,0 +1,68 @@
+{
+  "tuning_entries": [
+    {
+      "val_seed": 992,
+      "config": {
+        "rollout_horizon": 10,
+        "dt": 0.5
+      },
+      "avoided_trap": 1.0,
+      "mean_pruning_margin": 372.826533400877,
+      "status": "PASS"
+    },
+    {
+      "val_seed": 992,
+      "config": {
+        "rollout_horizon": 15,
+        "dt": 0.5
+      },
+      "avoided_trap": 1.0,
+      "mean_pruning_margin": 372.826533400877,
+      "status": "PASS"
+    },
+    {
+      "val_seed": 992,
+      "config": {
+        "rollout_horizon": 20,
+        "dt": 0.5
+      },
+      "avoided_trap": 1.0,
+      "mean_pruning_margin": 372.826533400877,
+      "status": "PASS"
+    }
+  ],
+  "_meta": {
+    "exp_id": "capn_m3_latent_world_model_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      992,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "config": {
+      "validation_seed": 992,
+      "n_configs": 3
+    },
+    "command": "python rpn/benchmarks/capn_m3_world_model_benchmark.py tune",
+    "timestamp_utc": "2026-10-16T17:39:46+00:00",
+    "python": "3.12.10"
+  }
+}

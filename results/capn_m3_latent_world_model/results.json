@@ -1,0 +1,243 @@
+{
+  "headline_metric": "deceptive_trap_avoidance_rate_pct",
+  "direction": "higher_is_better",
+  "n_seeds": 20,
+  "summary": {
+    "intact_avoidance_rate_pct": {
+      "mean": 100.0,
+      "std": 0.0,
+      "ci_95": 0.0,
+      "min": 100.0,
+      "max": 100.0
+    },
+    "intact_pruning_margin": {
+      "mean": 364.41748075598036,
+      "std": 55.167672124189934,
+      "ci_95": 24.178298345901347,
+      "min": 199.99999999999994,
+      "max": 399.99999999999994
+    },
+    "reactive_control_avoidance_pct": {
+      "mean": 0.0,
+      "std": 0.0,
+      "ci_95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "scrambled_control_avoidance_pct": {
+      "mean": 25.0,
+      "std": 43.30127018922193,
+      "ci_95": 18.97761839641634,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "model_free_baseline_avoidance_pct": {
+      "mean": 40.0,
+      "std": 48.98979485566356,
+      "ci_95": 21.470724254202512,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 640,
+      "intact_avoided": 1.0,
+      "intact_margin": 381.293957579121,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 1.0
+    },
+    {
+      "seed": 641,
+      "intact_avoided": 1.0,
+      "intact_margin": 372.4168724961171,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 642,
+      "intact_avoided": 1.0,
+      "intact_margin": 381.65917272466174,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 643,
+      "intact_avoided": 1.0,
+      "intact_margin": 380.0098911353217,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 644,
+      "intact_avoided": 1.0,
+      "intact_margin": 384.58166607007564,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 645,
+      "intact_avoided": 1.0,
+      "intact_margin": 383.45030452914636,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 1.0
+    },
+    {
+      "seed": 646,
+      "intact_avoided": 1.0,
+      "intact_margin": 383.4582866963973,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 647,
+      "intact_avoided": 1.0,
+      "intact_margin": 380.17358687291465,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 648,
+      "intact_avoided": 1.0,
+      "intact_margin": 200.00000000000006,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 1.0,
+      "model_free_avoided": 1.0
+    },
+    {
+      "seed": 649,
+      "intact_avoided": 1.0,
+      "intact_margin": 391.75673449888893,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 1.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 650,
+      "intact_avoided": 1.0,
+      "intact_margin": 383.4292777706043,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 1.0
+    },
+    {
+      "seed": 651,
+      "intact_avoided": 1.0,
+      "intact_margin": 392.69273279468047,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 1.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 652,
+      "intact_avoided": 1.0,
+      "intact_margin": 380.2886290217736,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 653,
+      "intact_avoided": 1.0,
+      "intact_margin": 199.99999999999994,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 1.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 654,
+      "intact_avoided": 1.0,
+      "intact_margin": 373.2009171203149,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 655,
+      "intact_avoided": 1.0,
+      "intact_margin": 399.99999999999994,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 1.0,
+      "model_free_avoided": 1.0
+    },
+    {
+      "seed": 656,
+      "intact_avoided": 1.0,
+      "intact_margin": 373.470929418609,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 1.0
+    },
+    {
+      "seed": 657,
+      "intact_avoided": 1.0,
+      "intact_margin": 380.338240298807,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 0.0
+    },
+    {
+      "seed": 658,
+      "intact_avoided": 1.0,
+      "intact_margin": 383.10204091447827,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 1.0
+    },
+    {
+      "seed": 659,
+      "intact_avoided": 1.0,
+      "intact_margin": 383.0263751776958,
+      "reactive_avoided": 0.0,
+      "scrambled_avoided": 0.0,
+      "model_free_avoided": 1.0
+    }
+  ],
+  "_meta": {
+    "exp_id": "capn_m3_latent_world_model",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650,
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659
+    ],
+    "config": {
+      "d_map": 32,
+      "d_entity": 16,
+      "d_dyn": 8,
+      "d_unc": 8,
+      "rollout_horizon": 15,
+      "dt": 0.5,
+      "hazard_penalty": 150.0
+    },
+    "command": "python rpn/benchmarks/capn_m3_world_model_benchmark.py",
+    "timestamp_utc": "2026-10-16T17:39:08+00:00",
+    "python": "3.12.10"
+  }
+}

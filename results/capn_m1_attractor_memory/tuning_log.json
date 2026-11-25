@@ -1,0 +1,93 @@
+{
+  "tuning_entries": [
+    {
+      "config_id": 1,
+      "seed": 994,
+      "g_rec": 2.5,
+      "noise_sigma": 0.4,
+      "description": "Sub-critical recurrent gain (g=2.5)",
+      "val_acc_capu": 100.0,
+      "val_snr_capu": 9.796088849415636,
+      "val_acc_linear": 62.5,
+      "val_snr_linear": -1.474023957800215,
+      "val_acc_unfac": 37.5,
+      "val_snr_unfac": -1.0496338058315375,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 2,
+      "seed": 994,
+      "g_rec": 3.5,
+      "noise_sigma": 0.4,
+      "description": "Calibrated supercritical gain (g=3.5)",
+      "val_acc_capu": 100.0,
+      "val_snr_capu": 12.09010539049972,
+      "val_acc_linear": 50.0,
+      "val_snr_linear": 0.7985331281812018,
+      "val_acc_unfac": 62.5,
+      "val_snr_unfac": 1.3936600976244549,
+      "status": "SELECTED_FOR_FROZEN_EVALUATION"
+    },
+    {
+      "config_id": 3,
+      "seed": 994,
+      "g_rec": 4.5,
+      "noise_sigma": 0.4,
+      "description": "Strong recurrent gain (g=4.5)",
+      "val_acc_capu": 100.0,
+      "val_snr_capu": 13.141341105501478,
+      "val_acc_linear": 25.0,
+      "val_snr_linear": 0.19537193724596352,
+      "val_acc_unfac": 87.5,
+      "val_snr_unfac": 2.699966605783721,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 4,
+      "seed": 994,
+      "g_rec": 3.5,
+      "noise_sigma": 0.5,
+      "description": "Stress noise test (sigma=0.50)",
+      "val_acc_capu": 100.0,
+      "val_snr_capu": 11.573864752434439,
+      "val_acc_linear": 50.0,
+      "val_snr_linear": 0.7950003476675325,
+      "val_acc_unfac": 50.0,
+      "val_snr_unfac": 0.9430856537770245,
+      "status": "EXPLORATION"
+    }
+  ],
+  "_meta": {
+    "exp_id": "capn_m1_attractor_memory_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "config": {
+      "purpose": "validation_tuning"
+    },
+    "command": "tuning",
+    "timestamp_utc": "2026-10-16T17:12:20+00:00",
+    "python": "3.12.10"
+  }
+}

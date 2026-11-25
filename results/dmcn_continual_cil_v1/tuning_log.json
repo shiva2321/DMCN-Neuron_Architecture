@@ -1,0 +1,59 @@
+{
+  "tuning_entries": [
+    {
+      "run_index": 1,
+      "seed": 999,
+      "metrics": {
+        "dmcn_cil_final_acc": 97.77777777777777,
+        "dmcn_cil_p0_retention": 100.0,
+        "dmcn_cil_p0_bwt": 0.0,
+        "joint_offline_upper_bound_acc": 97.77777777777777,
+        "raw_linear_rls_acc": 93.88888888888889,
+        "ablate_precision_acc": 17.77777777777778,
+        "mlp_sgd_cil_acc": 17.5,
+        "mlp_sgd_p0_retention": 0.0,
+        "mlp_sgd_p0_bwt": -100.0,
+        "mlp_adam_cil_acc": 16.944444444444446,
+        "untrained_acc": 9.444444444444445,
+        "blind_acc": 9.444444444444445,
+        "shuffled_labels_acc": 12.222222222222221,
+        "majority_acc": 9.444444444444445
+      }
+    }
+  ],
+  "_meta": {
+    "exp_id": "dmcn_continual_cil_v1_val",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_seed_999",
+      "d_exp": 256,
+      "ridge": 2.0
+    },
+    "command": "rpn/benchmarks/dmcn_continual_cil_benchmark.py --mode val",
+    "timestamp_utc": "2026-11-24T17:51:01+00:00",
+    "python": "3.12.10"
+  }
+}

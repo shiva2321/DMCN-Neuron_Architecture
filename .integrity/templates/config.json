@@ -1,0 +1,15 @@
+{
+  "ledger": "docs/CLAIMS.md",
+  "status_docs": [],
+  "status_docs_pending": [],
+  "status_id_regex": "^[A-Za-z]+-[0-9]+",
+  "lint_exclude": ["tests/integrity/*", "*/tests/integrity/*"],
+  "lint_skip_dirs": [],
+  "results_globs": ["*result*.json"],
+  "results_exclude": ["*telemetry*", "*package*.json"],
+  "protected": [],
+  "tests": [],
+  "full_tests": [],
+  "tests_timeout": 1800,
+  "tracked_write_allowlist": []
+}

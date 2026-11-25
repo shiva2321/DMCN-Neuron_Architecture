@@ -1,0 +1,270 @@
+{
+  "headline_metric": "working_memory_retrieval_accuracy",
+  "direction": "higher_is_better",
+  "n_seeds": 20,
+  "summary": {
+    "intact_capu_accuracy": {
+      "mean": 100.0,
+      "std": 0.0,
+      "ci_95": 0.0,
+      "min": 100.0,
+      "max": 100.0
+    },
+    "intact_capu_snr_db": {
+      "mean": 11.336861591815932,
+      "std": 1.210351722938648,
+      "ci_95": 0.5304600309182624,
+      "min": 9.551280269238154,
+      "max": 13.593210150129474
+    },
+    "linear_control_accuracy": {
+      "mean": 64.375,
+      "std": 17.805140446393267,
+      "ci_95": 7.8034468598649935,
+      "min": 25.0,
+      "max": 87.5
+    },
+    "linear_control_snr_db": {
+      "mean": 0.6203063724399074,
+      "std": 0.7915098878271428,
+      "ci_95": 0.34689450315276604,
+      "min": -0.6844207227410258,
+      "max": 2.3868650330821497
+    },
+    "stp_ablated_control_accuracy": {
+      "mean": 80.0,
+      "std": 16.91697994697386,
+      "ci_95": 7.4141933585451305,
+      "min": 37.5,
+      "max": 100.0
+    },
+    "stp_ablated_control_snr_db": {
+      "mean": 1.4487640751026412,
+      "std": 1.0041347938295235,
+      "ci_95": 0.440081476884808,
+      "min": -0.23130440486060905,
+      "max": 3.6810354813078328
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 600,
+      "acc_capu": 100.0,
+      "snr_capu": 12.999385799883516,
+      "acc_linear": 50.0,
+      "snr_linear": 1.0280676927648216,
+      "acc_unfac": 50.0,
+      "snr_unfac": 1.6862398847942228
+    },
+    {
+      "seed": 601,
+      "acc_capu": 100.0,
+      "snr_capu": 11.303178932531917,
+      "acc_linear": 62.5,
+      "snr_linear": -0.2622279293579817,
+      "acc_unfac": 87.5,
+      "snr_unfac": 0.9693004388041566
+    },
+    {
+      "seed": 602,
+      "acc_capu": 100.0,
+      "snr_capu": 13.395065404315647,
+      "acc_linear": 87.5,
+      "snr_linear": 2.3868650330821497,
+      "acc_unfac": 87.5,
+      "snr_unfac": 3.6810354813078328
+    },
+    {
+      "seed": 603,
+      "acc_capu": 100.0,
+      "snr_capu": 10.547167143721552,
+      "acc_linear": 62.5,
+      "snr_linear": 0.16334551577737375,
+      "acc_unfac": 87.5,
+      "snr_unfac": 0.7153815626672406
+    },
+    {
+      "seed": 604,
+      "acc_capu": 100.0,
+      "snr_capu": 9.759716536720248,
+      "acc_linear": 62.5,
+      "snr_linear": -0.6844207227410258,
+      "acc_unfac": 75.0,
+      "snr_unfac": 0.0005905168954343232
+    },
+    {
+      "seed": 605,
+      "acc_capu": 100.0,
+      "snr_capu": 10.516785350600717,
+      "acc_linear": 50.0,
+      "snr_linear": -0.024704603820637605,
+      "acc_unfac": 75.0,
+      "snr_unfac": 1.0340536804643898
+    },
+    {
+      "seed": 606,
+      "acc_capu": 100.0,
+      "snr_capu": 11.373963590805609,
+      "acc_linear": 62.5,
+      "snr_linear": -0.10715376656197573,
+      "acc_unfac": 75.0,
+      "snr_unfac": 0.7094056845270031
+    },
+    {
+      "seed": 607,
+      "acc_capu": 100.0,
+      "snr_capu": 11.799116551500674,
+      "acc_linear": 87.5,
+      "snr_linear": 1.3654818719703707,
+      "acc_unfac": 100.0,
+      "snr_unfac": 2.7208969224629964
+    },
+    {
+      "seed": 608,
+      "acc_capu": 100.0,
+      "snr_capu": 12.965448814782697,
+      "acc_linear": 50.0,
+      "snr_linear": -0.5374963853533743,
+      "acc_unfac": 87.5,
+      "snr_unfac": -0.23130440486060905
+    },
+    {
+      "seed": 609,
+      "acc_capu": 100.0,
+      "snr_capu": 11.182503534253332,
+      "acc_linear": 37.5,
+      "snr_linear": 0.2713793544927432,
+      "acc_unfac": 62.5,
+      "snr_unfac": 0.8506374683458295
+    },
+    {
+      "seed": 610,
+      "acc_capu": 100.0,
+      "snr_capu": 11.945610175142601,
+      "acc_linear": 75.0,
+      "snr_linear": 0.832608602972774,
+      "acc_unfac": 100.0,
+      "snr_unfac": 1.5106984066806357
+    },
+    {
+      "seed": 611,
+      "acc_capu": 100.0,
+      "snr_capu": 11.37197757392357,
+      "acc_linear": 75.0,
+      "snr_linear": 1.1496540430777,
+      "acc_unfac": 87.5,
+      "snr_unfac": 2.2632549685637873
+    },
+    {
+      "seed": 612,
+      "acc_capu": 100.0,
+      "snr_capu": 10.09061224208188,
+      "acc_linear": 87.5,
+      "snr_linear": 1.0803842140209183,
+      "acc_unfac": 87.5,
+      "snr_unfac": 1.524932016236292
+    },
+    {
+      "seed": 613,
+      "acc_capu": 100.0,
+      "snr_capu": 9.551280269238154,
+      "acc_linear": 75.0,
+      "snr_linear": 1.4899603303226172,
+      "acc_unfac": 75.0,
+      "snr_unfac": 2.8737395518407496
+    },
+    {
+      "seed": 614,
+      "acc_capu": 100.0,
+      "snr_capu": 11.461279977189935,
+      "acc_linear": 50.0,
+      "snr_linear": 0.8520605194795645,
+      "acc_unfac": 62.5,
+      "snr_unfac": 1.491418685475438
+    },
+    {
+      "seed": 615,
+      "acc_capu": 100.0,
+      "snr_capu": 11.585995348990908,
+      "acc_linear": 75.0,
+      "snr_linear": 1.2817133450871407,
+      "acc_unfac": 100.0,
+      "snr_unfac": 2.1206399815611023
+    },
+    {
+      "seed": 616,
+      "acc_capu": 100.0,
+      "snr_capu": 9.652770322668825,
+      "acc_linear": 50.0,
+      "snr_linear": 0.29638952572957394,
+      "acc_unfac": 75.0,
+      "snr_unfac": 0.8597095290577417
+    },
+    {
+      "seed": 617,
+      "acc_capu": 100.0,
+      "snr_capu": 11.325026311683683,
+      "acc_linear": 87.5,
+      "snr_linear": 1.1359576426497084,
+      "acc_unfac": 100.0,
+      "snr_unfac": 2.052422431481838
+    },
+    {
+      "seed": 618,
+      "acc_capu": 100.0,
+      "snr_capu": 10.31713780615371,
+      "acc_linear": 25.0,
+      "snr_linear": -0.22845637532782515,
+      "acc_unfac": 37.5,
+      "snr_unfac": 0.1816539174560322
+    },
+    {
+      "seed": 619,
+      "acc_capu": 100.0,
+      "snr_capu": 13.593210150129474,
+      "acc_linear": 75.0,
+      "snr_linear": 0.9167195405335131,
+      "acc_unfac": 87.5,
+      "snr_unfac": 1.9605747782907088
+    }
+  ],
+  "_meta": {
+    "exp_id": "capn_m1_attractor_memory",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      600,
+      601,
+      602,
+      603,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610,
+      611,
+      612,
+      613,
+      614,
+      615,
+      616,
+      617,
+      618,
+      619
+    ],
+    "config": {
+      "dim": 128,
+      "k_patterns": 8,
+      "g_rec": 3.5,
+      "noise_sigma": 0.4,
+      "tau_m": 20.0,
+      "tau_f": 1500.0,
+      "tau_d": 50.0
+    },
+    "command": "python rpn/benchmarks/capn_m1_attractor_benchmark.py",
+    "timestamp_utc": "2026-10-16T17:12:24+00:00",
+    "python": "3.12.10"
+  }
+}

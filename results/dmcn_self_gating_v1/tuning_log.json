@@ -1,0 +1,69 @@
+{
+  "tuning_entries": [
+    {
+      "run_index": 1,
+      "seed": 999,
+      "elapsed_sec": 2.0514014000000316,
+      "metrics": {
+        "seed": 999,
+        "lorenz_self_gate_nmse": 0.003027694722214195,
+        "lorenz_uniform_ablate_nmse": 0.0034426500541846266,
+        "lorenz_raw_only_nmse": 0.00770300295750883,
+        "lorenz_homeo_only_nmse": 0.007380184283236573,
+        "lorenz_spine_only_nmse": 0.0075222651660942766,
+        "lorenz_shuffled_nmse": 0.39723346788399905,
+        "lorenz_gate_raw_plus_trans": 0.9636363817627547,
+        "lorenz_gate_homeo": 0.018570773010613564,
+        "gainshock_self_gate_nmse": 0.021104600971610394,
+        "gainshock_uniform_ablate_nmse": 0.04047682981010928,
+        "gainshock_raw_only_nmse": 0.12295030412923995,
+        "gainshock_homeo_only_nmse": 0.03256793229374709,
+        "gainshock_spine_only_nmse": 0.025360550609657473,
+        "gainshock_shuffled_nmse": 1.178262922402355,
+        "gainshock_gate_homeo_plus_spine": 0.997817592872415,
+        "gainshock_gate_raw": 0.00111853758669212,
+        "delayed_self_gate_acc": 100.0,
+        "delayed_uniform_ablate_acc": 100.0,
+        "delayed_raw_only_acc": 50.0,
+        "delayed_homeo_only_acc": 47.333333333333336,
+        "delayed_spine_only_acc": 100.0,
+        "delayed_shuffled_acc": 45.333333333333336,
+        "delayed_gate_spine": 0.48066030532911463,
+        "delayed_gate_raw": 2.28586107979791e-05
+      }
+    }
+  ],
+  "_meta": {
+    "exp_id": "dmcn_self_gating_v1_val",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_seed_999"
+    },
+    "command": "rpn/benchmarks/dmcn_self_gating_benchmark.py --mode val",
+    "timestamp_utc": "2026-11-25T06:33:15+00:00",
+    "python": "3.12.10"
+  }
+}

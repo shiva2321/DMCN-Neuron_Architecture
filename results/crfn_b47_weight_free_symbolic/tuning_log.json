@@ -1,0 +1,47 @@
+{
+  "tuning_entries": [],
+  "configs_tried": 0,
+  "status": "frozen_zero_tuning",
+  "notes": "Parameters derived from first-principles biophysics and frozen.",
+  "_meta": {
+    "exp_id": "crfn_b47_weight_free_symbolic",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      920,
+      921,
+      922,
+      923,
+      924,
+      925,
+      926,
+      927,
+      928,
+      929,
+      930,
+      931,
+      932,
+      933,
+      934,
+      935,
+      936,
+      937,
+      938,
+      939
+    ],
+    "config": {
+      "purpose": "validation_tuning",
+      "status": "frozen"
+    },
+    "command": "tuning",
+    "timestamp_utc": "2026-10-17T15:11:51+00:00",
+    "python": "3.12.10",
+    "tuning_seeds": [
+      860,
+      861,
+      862,
+      863,
+      864
+    ]
+  }
+}

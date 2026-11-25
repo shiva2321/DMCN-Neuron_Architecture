@@ -1,0 +1,47 @@
+{
+  "tuning_entries": [],
+  "configs_tried": 0,
+  "status": "frozen_zero_tuning",
+  "notes": "Parameters derived from first-principles biophysics and frozen.",
+  "_meta": {
+    "exp_id": "capn_b46_symbolic_reasoning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      900,
+      901,
+      902,
+      903,
+      904,
+      905,
+      906,
+      907,
+      908,
+      909,
+      910,
+      911,
+      912,
+      913,
+      914,
+      915,
+      916,
+      917,
+      918,
+      919
+    ],
+    "config": {
+      "purpose": "validation_tuning",
+      "status": "frozen"
+    },
+    "command": "tuning",
+    "timestamp_utc": "2026-10-17T15:04:16+00:00",
+    "python": "3.12.10",
+    "tuning_seeds": [
+      850,
+      851,
+      852,
+      853,
+      854
+    ]
+  }
+}

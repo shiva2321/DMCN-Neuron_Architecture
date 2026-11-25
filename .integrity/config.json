@@ -1,0 +1,27 @@
+{
+  "ledger": "docs/CLAIMS.md",
+  "status_docs": ["docs/BOARD.md"],
+  "status_docs_pending": ["docs/BOARD.md"],
+  "status_id_regex": "^[A-Za-z]+-[0-9]+",
+  "lint_exclude": ["rpn/tests/integrity/*", "research-integrity-kit/*"],
+  "lint_skip_dirs": ["research-integrity-kit"],
+  "results_globs": ["*result*.json"],
+  "results_exclude": ["*telemetry*", "*package*.json", "research-integrity-kit/*"],
+  "protected": [
+    "research-integrity-kit/GEMINI.md",
+    "research-integrity-kit/install.py",
+    "research-integrity-kit/tools/*.py",
+    "research-integrity-kit/templates/*",
+    "research-integrity-kit/tests/*.py",
+    "rpn/tests/integrity/*.py",
+    "rpn/tests/integrity/*.md"
+  ],
+  "tests": [
+    {"cmd": "python -m pytest -q -p no:cacheprovider tests/integrity", "cwd": "rpn"}
+  ],
+  "full_tests": [
+    {"cmd": "python -m pytest -q -p no:cacheprovider tests", "cwd": "rpn"}
+  ],
+  "tests_timeout": 3600,
+  "tracked_write_allowlist": []
+}

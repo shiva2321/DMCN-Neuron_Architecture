@@ -1,0 +1,60 @@
+{
+  "tuning_entries": [
+    {
+      "config_index": 1,
+      "horizon": 10,
+      "val_seed": 995,
+      "capn_reached": true,
+      "capn_collisions": 0,
+      "capn_steps": 136,
+      "blind_reached": false,
+      "blind_collisions": 120,
+      "note": "H=10 clears hazard successfully."
+    },
+    {
+      "config_index": 2,
+      "horizon": 15,
+      "val_seed": 995,
+      "capn_reached": true,
+      "capn_collisions": 0,
+      "capn_steps": 129,
+      "blind_reached": false,
+      "blind_collisions": 137,
+      "note": "Selected frozen configuration: H=15 prospective rollout yields smoother, faster navigation."
+    }
+  ],
+  "_meta": {
+    "exp_id": "capn_m6_grand_benchmark_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      995,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "config": {
+      "val_seed": 995,
+      "n_configs": 2
+    },
+    "command": "python rpn/benchmarks/capn_m6_grand_benchmark.py tune",
+    "timestamp_utc": "2026-10-16T18:04:51+00:00",
+    "python": "3.12.10"
+  }
+}

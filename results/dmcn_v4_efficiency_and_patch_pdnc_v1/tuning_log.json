@@ -1,0 +1,75 @@
+{
+  "tuning_entries": [
+    {
+      "run_index": 1,
+      "seed": 999,
+      "elapsed_sec": 119.35730369999874,
+      "metrics": {
+        "seed": 999,
+        "pong__patch_pdnc_hit": 83.0,
+        "pong__patch_pdnc_ood_hit": 57.0,
+        "pong__patch_pdnc_dir_align": 70.17994858611826,
+        "pong__patch_pdnc_kp_cos": 0.8112419803141001,
+        "pong__patch_frozen_hit": 16.0,
+        "pong__ablate_elig_hit": 42.0,
+        "pong__shuffle_apical_hit": 23.0,
+        "pong__patch_bp_a2c_hit": 71.0,
+        "pong__flat_bp_a2c_hit": 71.0,
+        "pong__blind_hit": 27.0,
+        "pong__untrained_hit": 27.0,
+        "pong__shuffled_reward_hit": 23.0,
+        "pong__random_hit": 31.0,
+        "mnist__woodbury_acc": 95.63999772071838,
+        "mnist__woodbury_sps": 40924.2552058421,
+        "mnist__gram_acc": 96.05000019073486,
+        "mnist__gram_sps": 124990.26117533157,
+        "mnist__ternary_gram_acc": 95.84999680519104,
+        "mnist__ternary_gram_sps": 134234.91468012703,
+        "mnist__adam_mlp_sps": 191642.2881708605,
+        "c100__woodbury_acc": 68.5699999332428,
+        "c100__woodbury_time_s": 3.3414317999995546,
+        "c100__woodbury_vram_mb": 1433.88672,
+        "c100__gram_acc": 68.7999963760376,
+        "c100__gram_time_s": 1.499424600002385,
+        "c100__gram_vram_mb": 1410.295808,
+        "c100__ternary_gram_acc": 68.79000067710876,
+        "c100__ternary_gram_time_s": 1.3283529000000271,
+        "c100__shuffled_acc": 1.1500000022351742
+      }
+    }
+  ],
+  "_meta": {
+    "exp_id": "dmcn_v4_efficiency_and_patch_pdnc_v1_val",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_seed_999",
+      "evaluated_val_seed": 999
+    },
+    "command": "-c",
+    "timestamp_utc": "2026-11-25T11:24:37+00:00",
+    "python": "3.12.10"
+  }
+}

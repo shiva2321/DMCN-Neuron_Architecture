@@ -1,0 +1,77 @@
+{
+  "tuning_entries": [
+    {
+      "config_id": 1,
+      "seed": 999,
+      "description": "Initial continuous HH gating with Kv4 and Ca_v",
+      "gc": 0.45,
+      "w": 2.5,
+      "vth_soma": -50.0,
+      "val_accuracy": 0.5,
+      "status": "REJECTED (stiff oscillation / high somatic leak)"
+    },
+    {
+      "config_id": 2,
+      "seed": 999,
+      "description": "Rush-Larsen exponential integration with high Kv",
+      "gc": 0.45,
+      "w": 3.0,
+      "vth_soma": -48.0,
+      "val_accuracy": 0.5,
+      "status": "REJECTED (insufficient non-monotonic drop at onset)"
+    },
+    {
+      "config_id": 3,
+      "seed": 999,
+      "description": "Direct Gidon et al. 2020 dCaAP.mod formulation with wide jitter (+/-5ms)",
+      "gc": 0.0035,
+      "w": 2.6,
+      "vth_soma": -48.0,
+      "val_accuracy": 0.75,
+      "status": "REJECTED (jitter exceeded dendritic integration window)"
+    },
+    {
+      "config_id": 4,
+      "seed": 999,
+      "description": "Gidon et al. 2020 biophysical two-compartment dCaAP neuron with calibrated cable attenuation and synchronous jitter (+/-1.5ms)",
+      "gc": 0.002,
+      "w": 5.0,
+      "vth_soma": -52.0,
+      "val_accuracy": 1.0,
+      "status": "SELECTED_FOR_FROZEN_EVALUATION"
+    }
+  ],
+  "_meta": {
+    "exp_id": "track1_dcaap_xor_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "config": {
+      "purpose": "validation_tuning"
+    },
+    "command": "tuning",
+    "timestamp_utc": "2026-10-16T15:51:30+00:00",
+    "python": "3.12.10"
+  }
+}

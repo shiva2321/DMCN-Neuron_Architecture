@@ -1,0 +1,265 @@
+{
+  "summary": {
+    "false_positive_stat_count": 0,
+    "false_positive_noise_count": 0,
+    "n_spawn_stat": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "ci95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "n_spawn_noise": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "ci95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "n_spawn_shift": {
+      "mean": 3.0,
+      "sd": 1.2565617248750864,
+      "ci95": 0.550712457210036,
+      "min": 1.0,
+      "max": 6.0
+    },
+    "final_hid_shift": {
+      "mean": 7.0,
+      "sd": 1.2565617248750864,
+      "ci95": 0.550712457210036,
+      "min": 5.0,
+      "max": 10.0
+    },
+    "n_spawn_timer_baseline": {
+      "mean": 5.0,
+      "sd": 0.0,
+      "ci95": 0.0,
+      "min": 5.0,
+      "max": 5.0
+    },
+    "exit_criterion_met": true
+  },
+  "per_seed": [
+    {
+      "seed": 680,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 2,
+      "final_hid_shift": 6,
+      "mean_error_shift": 0.9523633958856507,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 681,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 3,
+      "final_hid_shift": 7,
+      "mean_error_shift": 1.079697589619742,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 682,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 4,
+      "final_hid_shift": 8,
+      "mean_error_shift": 1.4989244499815875,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 683,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 3,
+      "final_hid_shift": 7,
+      "mean_error_shift": 1.0806375973240454,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 684,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 3,
+      "final_hid_shift": 7,
+      "mean_error_shift": 1.2886951888279279,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 685,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 4,
+      "final_hid_shift": 8,
+      "mean_error_shift": 1.2005533832010369,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 686,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 1,
+      "final_hid_shift": 5,
+      "mean_error_shift": 1.5587650012577074,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 687,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 6,
+      "final_hid_shift": 10,
+      "mean_error_shift": 1.0201755304795435,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 688,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 3,
+      "final_hid_shift": 7,
+      "mean_error_shift": 1.2650584699635326,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 689,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 4,
+      "final_hid_shift": 8,
+      "mean_error_shift": 1.2322322781216035,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 690,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 2,
+      "final_hid_shift": 6,
+      "mean_error_shift": 1.0929414259175763,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 691,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 2,
+      "final_hid_shift": 6,
+      "mean_error_shift": 1.125917411742369,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 692,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 3,
+      "final_hid_shift": 7,
+      "mean_error_shift": 1.0736021862697533,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 693,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 4,
+      "final_hid_shift": 8,
+      "mean_error_shift": 0.8912075684509864,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 694,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 3,
+      "final_hid_shift": 7,
+      "mean_error_shift": 1.0762786999223835,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 695,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 1,
+      "final_hid_shift": 5,
+      "mean_error_shift": 1.4431264177989593,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 696,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 2,
+      "final_hid_shift": 6,
+      "mean_error_shift": 0.9972597972362522,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 697,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 5,
+      "final_hid_shift": 9,
+      "mean_error_shift": 0.8919685462293814,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 698,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 3,
+      "final_hid_shift": 7,
+      "mean_error_shift": 1.4796443375757975,
+      "n_spawn_timer_stat": 5
+    },
+    {
+      "seed": 699,
+      "n_spawn_stat": 0,
+      "n_spawn_noise": 0,
+      "n_spawn_shift": 2,
+      "final_hid_shift": 6,
+      "mean_error_shift": 0.9071882587911834,
+      "n_spawn_timer_stat": 5
+    }
+  ],
+  "_meta": {
+    "exp_id": "capn_m5_structural_plasticity",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      680,
+      681,
+      682,
+      683,
+      684,
+      685,
+      686,
+      687,
+      688,
+      689,
+      690,
+      691,
+      692,
+      693,
+      694,
+      695,
+      696,
+      697,
+      698,
+      699
+    ],
+    "config": {
+      "n_seeds": 20,
+      "d_in": 8,
+      "d_initial_hid": 4,
+      "d_out": 4,
+      "theta_growth": 0.3,
+      "theta_rho": 0.28,
+      "sustained_steps": 7,
+      "refractory_steps": 40,
+      "prune_threshold": 0.005
+    },
+    "command": "python rpn/benchmarks/capn_m5_structural_benchmark.py",
+    "timestamp_utc": "2026-10-16T18:30:32+00:00",
+    "python": "3.12.10"
+  }
+}

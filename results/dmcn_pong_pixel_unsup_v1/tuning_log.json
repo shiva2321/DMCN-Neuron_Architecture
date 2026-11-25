@@ -1,0 +1,115 @@
+{
+  "tuning_entries": [
+    {
+      "run_index": 1,
+      "seed": 999,
+      "elapsed_sec": 55.3155984,
+      "metrics": {
+        "seed": 999,
+        "pixel_unsup_oja_dmcn_hit_rate": 20.0,
+        "pixel_unsup_oja_dmcn_dir_align": 11.885895404120443,
+        "pixel_ablate_unsup_hit_rate": 20.0,
+        "pixel_ablate_unsup_dir_align": 16.6270783847981,
+        "pixel_bp_a2c_hit_rate": 53.0,
+        "pixel_untrained_hit_rate": 29.0,
+        "pixel_blind_hit_rate": 20.0,
+        "pixel_shuffled_reward_hit_rate": 29.0,
+        "pixel_random_hit_rate": 25.0,
+        "rf_peak_concentration_unsup": 0.11009490732387629,
+        "rf_peak_concentration_frozen": 0.06327239055822395
+      }
+    },
+    {
+      "run_index": 2,
+      "seed": 999,
+      "elapsed_sec": 44.33530649999966,
+      "metrics": {
+        "seed": 999,
+        "pixel_unsup_oja_dmcn_hit_rate": 20.0,
+        "pixel_unsup_oja_dmcn_dir_align": 14.743589743589743,
+        "pixel_ablate_unsup_hit_rate": 20.0,
+        "pixel_ablate_unsup_dir_align": 16.6270783847981,
+        "pixel_bp_a2c_hit_rate": 53.0,
+        "pixel_untrained_hit_rate": 29.0,
+        "pixel_blind_hit_rate": 20.0,
+        "pixel_shuffled_reward_hit_rate": 20.0,
+        "pixel_random_hit_rate": 25.0,
+        "rf_peak_concentration_unsup": 0.0987044147699554,
+        "rf_peak_concentration_frozen": 0.06327239055822395
+      }
+    },
+    {
+      "run_index": 3,
+      "seed": 999,
+      "elapsed_sec": 45.29526900000019,
+      "metrics": {
+        "seed": 999,
+        "pixel_unsup_oja_dmcn_hit_rate": 35.0,
+        "pixel_unsup_oja_dmcn_dir_align": 40.761300555114985,
+        "pixel_ablate_unsup_hit_rate": 54.0,
+        "pixel_ablate_unsup_dir_align": 59.416666666666664,
+        "pixel_bp_a2c_hit_rate": 53.0,
+        "pixel_untrained_hit_rate": 29.0,
+        "pixel_blind_hit_rate": 29.0,
+        "pixel_shuffled_reward_hit_rate": 25.0,
+        "pixel_random_hit_rate": 25.0,
+        "rf_peak_concentration_unsup": 0.10058621105206962,
+        "rf_peak_concentration_frozen": 0.06327239055822395
+      }
+    },
+    {
+      "run_index": 4,
+      "seed": 999,
+      "elapsed_sec": 42.06552030000057,
+      "metrics": {
+        "seed": 999,
+        "pixel_unsup_oja_dmcn_hit_rate": 44.0,
+        "pixel_unsup_oja_dmcn_dir_align": 31.109324758842444,
+        "pixel_ablate_unsup_hit_rate": 54.0,
+        "pixel_ablate_unsup_dir_align": 59.416666666666664,
+        "pixel_bp_a2c_hit_rate": 53.0,
+        "pixel_untrained_hit_rate": 29.0,
+        "pixel_blind_hit_rate": 29.0,
+        "pixel_shuffled_reward_hit_rate": 20.0,
+        "pixel_random_hit_rate": 25.0,
+        "rf_peak_concentration_unsup": 0.0879516235008223,
+        "rf_peak_concentration_frozen": 0.06327239055822395
+      }
+    }
+  ],
+  "_meta": {
+    "exp_id": "dmcn_pong_pixel_unsup_v1_val",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      988,
+      989,
+      990,
+      991,
+      992,
+      993,
+      994,
+      995,
+      996,
+      997,
+      998,
+      999
+    ],
+    "config": {
+      "purpose": "validation_seed_999",
+      "n_train": 2000,
+      "d_hid": 128
+    },
+    "command": "rpn/benchmarks/dmcn_pong_pixel_unsup_benchmark.py --mode val",
+    "timestamp_utc": "2026-11-25T06:39:02+00:00",
+    "python": "3.12.10"
+  }
+}

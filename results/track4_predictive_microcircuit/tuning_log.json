@@ -1,0 +1,81 @@
+{
+  "tuning_entries": [
+    {
+      "config_id": 1,
+      "seed": 996,
+      "lr": 0.02,
+      "order": 6,
+      "description": "Conservative learning rate (lr=0.02, order=6)",
+      "val_pesr": 0.07995341602204759,
+      "val_mse_pred": 0.027795148067761306,
+      "val_mse_surp": 0.34764177256119344,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 2,
+      "seed": 996,
+      "lr": 0.05,
+      "order": 8,
+      "description": "Calibrated learning rate (lr=0.05, order=8)",
+      "val_pesr": 0.0451000631067304,
+      "val_mse_pred": 0.008420781175245555,
+      "val_mse_surp": 0.18671328029668033,
+      "status": "SELECTED_FOR_FROZEN_EVALUATION"
+    },
+    {
+      "config_id": 3,
+      "seed": 996,
+      "lr": 0.1,
+      "order": 8,
+      "description": "Aggressive learning rate (lr=0.10, order=8)",
+      "val_pesr": 0.029147206075135778,
+      "val_mse_pred": 0.0021213002099512834,
+      "val_mse_surp": 0.07277884243899493,
+      "status": "EXPLORATION"
+    },
+    {
+      "config_id": 4,
+      "seed": 996,
+      "lr": 0.05,
+      "order": 10,
+      "description": "Higher degree L5 basis (lr=0.05, order=10)",
+      "val_pesr": 0.037233837061297126,
+      "val_mse_pred": 0.00805844098541244,
+      "val_mse_surp": 0.2164278852004337,
+      "status": "EXPLORATION"
+    }
+  ],
+  "_meta": {
+    "exp_id": "track4_predictive_microcircuit_tuning",
+    "git_commit": "6097a06dddad9f87ba633f25bd56a06c7433891d",
+    "git_dirty": true,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "config": {
+      "purpose": "validation_tuning"
+    },
+    "command": "tuning",
+    "timestamp_utc": "2026-10-16T16:31:49+00:00",
+    "python": "3.12.10"
+  }
+}

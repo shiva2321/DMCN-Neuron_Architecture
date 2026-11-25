@@ -1,0 +1,14 @@
+#!/bin/sh
+# Research-integrity gate (GEMINI.md section 14).
+# Activate once per clone:   git config core.hooksPath .githooks
+ROOT="$(git rev-parse --show-toplevel)" || exit 1
+cd "$ROOT" || exit 1
+[ -f .integrity/run_gates.py ] || exit 0
+PY="$(command -v python3 || command -v python)"
+[ -n "$PY" ] || { echo "integrity gates: python not found"; exit 1; }
+"$PY" .integrity/run_gates.py --fast || {
+  echo ""
+  echo "Commit blocked by the research-integrity gates (see above)."
+  echo "Fix the cause. Do not bypass with --no-verify and do not edit the gates."
+  exit 1
+}
